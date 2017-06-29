@@ -41,7 +41,7 @@ except:
 def main():
     pygame.init()
     fpsClock= pygame.time.Clock()
-    window = pygame.display.set_mode((1366,768),pygame.FULLSCREEN)
+    window = pygame.display.set_mode((1024,600),pygame.FULLSCREEN)
     pygame.display.set_caption("Mindwave Viewer")
 
     blackColor = pygame.Color(0,0,0)
@@ -54,9 +54,10 @@ def main():
     betaColor = pygame.Color(0,255,00)
     gammaColor = pygame.Color(0,255,255)
 
-    background_img = pygame.image.load("KBRI_background.jpg")
+    background_img = pygame.image.load("KBRI_background_1024x600.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     meditation_img = font.render("Meditation", False, whiteColor)
+    attention_value_img = font.render("0", False, whiteColor)
     attention_img = font.render("Attention", False, whiteColor)
     address_img = font.render(args.address,False, whiteColor)
     
@@ -64,6 +65,7 @@ def main():
     spectra = []
     iteration = 0
     num_attention = 0
+    attention_value = 0
 
     record_baseline = False
     quit = False
@@ -101,18 +103,22 @@ def main():
                         color = betaColor
                     else:
                         color = gammaColor
-                    pygame.draw.rect(window, color, (25+i*15, 600-value*2, 10, value*2))
+                    pygame.draw.rect(window, color, (25+i*15, 530-value*2, 10, value*2))
             else:
                 pass
-            pygame.draw.circle(window, redColor, (1100,550), int(recorder.attention[-1]/2))
-            pygame.draw.circle(window, greenColor, (1100,550), 60/2,1)
-            pygame.draw.circle(window, greenColor, (1100,550), 100/2,1)
-            window.blit(attention_img, (1055,470))
-            pygame.draw.circle(window, redColor, (1000,550), int(recorder.meditation[-1]/2))
-            pygame.draw.circle(window, greenColor, (1000,550), 60/2, 1)
-            pygame.draw.circle(window, greenColor, (1000,550), 100/2, 1)
-            window.blit(meditation_img, (945,470))
-            window.blit(address_img, (960,50))
+            window.blit(address_img, (800,100))            
+            attention_value = int(recorder.attention[-1])
+            attention_value_img = font.render(str(attention_value), False, whiteColor)
+            pygame.draw.circle(window, redColor, (900,500), int(attention_value/2))
+            pygame.draw.circle(window, greenColor, (900,500), 60/2,1)
+            pygame.draw.circle(window, greenColor, (900,500), 100/2,1)
+            window.blit(attention_img, (855,560))
+            #pygame.draw.circle(window, redColor, (800,500), int(recorder.poor_signal[-1]))
+            #pygame.draw.circle(window, redColor, (800,500), int(recorder.meditation[-1]/2))
+            #pygame.draw.circle(window, greenColor, (1000,550), 60/2, 1)
+            #pygame.draw.circle(window, greenColor, (1000,550), 100/2, 1)
+            #poor_img = font.render(str(recorder.poor_signal[-1]), False, whiteColor)
+            window.blit(attention_value_img, (960,560))
             """if len(parser.current_vector)>7:
                 m = max(p.current_vector)
                 for i in range(7):
@@ -130,6 +136,7 @@ def main():
         else:
             img = font.render("Not receiving any data from mindwave...", False, redColor)
             window.blit(img,(60,100))
+            window.blit(address_img, (800,100))
             pass
 
         for event in pygame.event.get():
