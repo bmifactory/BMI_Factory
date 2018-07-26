@@ -1,3 +1,3 @@
 #!/bin/sh
-cd /home/kbri/workspace/bmi_neurosky_py_proj
-python mindwave_viewer_mqtt_v5.py 24:71:89:EC:57:ED
+cd /home/kbri/PycharmProjects/BMI_Factory
+python3 mindwave_viewer_mqtt_v5.py CC:78:AB:25:41:3A
