@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16c2c01d-5f42-44af-8ce7-41c5f57b3948" name="Default Changelist" comment="update">
+    <list default="true" id="16c2c01d-5f42-44af-8ce7-41c5f57b3948" name="Default Changelist" comment="modified to fit 1920x1080 screen">
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BMI_Factory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BMI_Factory.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +65,8 @@
       <file leaf-file-name="mindwave_viewer_mqtt_v5.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="249" column="65" selection-start-line="249" selection-start-column="65" selection-end-line="249" selection-end-column="65" />
+            <state relative-caret-position="1125">
+              <caret line="288" column="42" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
               <folding>
                 <element signature="e#72#97#0" expanded="true" />
               </folding>
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532620452272</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modified to fit 1920x1080 screen">
+      <created>1536508148958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536508148958</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -265,7 +270,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="modified to fit 1920x1080 screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified to fit 1920x1080 screen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer.py">
@@ -552,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="249" column="65" selection-start-line="249" selection-start-column="65" selection-end-line="249" selection-end-column="65" />
+        <state relative-caret-position="1125">
+          <caret line="288" column="42" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
           <folding>
             <element signature="e#72#97#0" expanded="true" />
           </folding>
