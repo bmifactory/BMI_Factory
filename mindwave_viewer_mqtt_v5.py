@@ -44,7 +44,7 @@ except:
     pass
     
 def main():
-    fullscreen = True
+    fullscreen = False
     raw_eeg = True
     spectra = []
     iteration = 0
@@ -77,9 +77,9 @@ def main():
     fpsClock= pygame.time.Clock()
 
     if fullscreen==True:
-        window = pygame.display.set_mode((1360,768),pygame.FULLSCREEN)
+        window = pygame.display.set_mode((1920,1080),pygame.FULLSCREEN)
     else:
-        window = pygame.display.set_mode((1360,768),pygame.RESIZABLE)
+        window = pygame.display.set_mode((1920,1080),pygame.RESIZABLE)
 
     pygame.display.set_caption("Mindwave Viewer")
 
@@ -98,9 +98,9 @@ def main():
     entropyColor = pygame.Color(0,0,255)
 
     #Set pygame parameter
-    background_img_2 = pygame.image.load("KBRI_background_1360x768_mode2.jpg")
-    background_img_0 = pygame.image.load("KBRI_background_1360x768_mode0.jpg")
-    background_img_1 = pygame.image.load("KBRI_background_1360x768_mode1.jpg")
+    background_img_0 = pygame.image.load("Mode0_background.jpg")
+    background_img_1 = pygame.image.load("Mode1_background.jpg")
+    background_img_2 = pygame.image.load("Mode2_background.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     font_title = pygame.font.Font("freesansbold.ttf", 30)
     #meditation_txt_img = font.render("Meditation", False, whiteColor)
@@ -117,7 +117,7 @@ def main():
         except BluetoothError:
             pass
         #window.blit(background_img_0,(0,0))
-        window.blit(address_txt_img, (1125,100))
+        #window.blit(address_txt_img, (1125,100))
         if analysis_mode == 0:
             window.blit(background_img_0,(0,0))
         elif analysis_mode == 1:
@@ -130,16 +130,16 @@ def main():
 
         if control_mode == True:
             mode_img = font.render("Control On", False, blueColor)
-            window.blit(mode_img, (1165,700))
+            window.blit(mode_img, (1320,970))
             if control_1==True:
                 txt_img = font.render("Car", False, redColor)
-                window.blit(txt_img, (1165,730))
+                window.blit(txt_img, (1320,1000))
             if control_2==True:
                 txt_img = font.render("Spider", False, redColor)
-                window.blit(txt_img, (1220,730))
+                window.blit(txt_img, (1380,1000))
         else:
             mode_img = font.render("press F1 for control mode", False, whiteColor)
-            window.blit(mode_img, (1050,710))
+            window.blit(mode_img, (1320,980))
 
         if len(recorder.attention)>0:
             attention_value = int(recorder.attention[-1])
@@ -164,7 +164,7 @@ def main():
                             color = betaColor
                         else:
                             color = gammaColor
-                        pygame.draw.rect(window, color, (150+i*20, 550-value*3, 15, value*3))
+                        pygame.draw.rect(window, color, (210+i*30, 700-value*3, 25, value*3))
                 elif analysis_mode==2:
                     #entropy_value = 100*spectral_entropy(recorder.raw[-512*3:], range(flen), 512)
 		            #entropy_value = 2*(entropy_value-50)
@@ -175,7 +175,6 @@ def main():
                     #mobility_value, complexity_value = hjorth(recorder.raw[-512*3:])
                     if debug==True:
                         print(mobility_value)
-                        print(complexity_value)
                     pass
                 else:
                     pass
@@ -184,16 +183,18 @@ def main():
             #Show raw EEG signal
             if raw_eeg:
                 lv = 0
-                for i,value in enumerate(recorder.raw[-1360:]):
+                for i,value in enumerate(recorder.raw[-1920:]):
                     v = value/ 8.0
                     if analysis_mode==0:
                         pygame.draw.line(window, eegColor, (i+25, 400-lv), (i+25, 400-v))
                     else:
                         pygame.draw.line(window, eegColor, (i+25, 400-lv), (i+25, 400-v))
                     lv = v
+                raw_img = font.render("press F2 to hide Raw EEG", False, whiteColor)
+                window.blit(raw_img, (400,980))
             else:
                 raw_img = font.render("press F2 to show Raw EEG", False, whiteColor)
-                window.blit(raw_img, (100,710))
+                window.blit(raw_img, (400,980))
 
             #MQTT publish
             #if num_attention < len(recorder.attention): 
@@ -218,10 +219,8 @@ def main():
                 MQTT_connection = 0
             else:
                 MQTT_connection = 1
-		
-            MQTT_connection_img = font.render(str(MQTT_connection), False, whiteColor)
-            window.blit(MQTT_connection_img, (1260,100))
-
+            #MQTT_connection_img = font.render(str(MQTT_connection), False, whiteColor)
+            #window.blit(MQTT_connection_img, (1260,100))
             # publish attention value to MQTT server
             if MQTT_connection==0: 
                 if control_mode == True:
@@ -246,34 +245,32 @@ def main():
                 print(mqtt_value)
                 print(MQTT_connection)
             if analysis_mode==1:
-                pygame.draw.circle(window, redColor, (1200,600), int(attention_value/2))
-                pygame.draw.circle(window, greenColor, (1200,600), int(30/2),1)
-                pygame.draw.circle(window, greenColor, (1200,600), int(60/2),1)
-                pygame.draw.circle(window, greenColor, (1200,600), int(100/2),1)
-                window.blit(attention_txt_img, (1155,660))
-                attention_value_img = font.render(str(attention_value), False, whiteColor)
-                window.blit(attention_value_img, (1260,660))
+                pygame.draw.circle(window, redColor, (1620,860), int(attention_value/2))
+                pygame.draw.circle(window, greenColor, (1620,860), int(30/2),1)
+                pygame.draw.circle(window, greenColor, (1620,860), int(60/2),1)
+                pygame.draw.circle(window, greenColor, (1620,860), int(100/2),1)
+                window.blit(attention_txt_img, (1575,920))
+                #attention_value_img = font.render(str(attention_value), False, whiteColor)
+                #window.blit(attention_value_img, (1580,920))
             elif analysis_mode==2:
                 attention_value_img = font.render(str(int(gain*attention_value)), False, whiteColor)
                 if int(gain*attention_value) > 100:
-                    pygame.draw.circle(window, redColor, (680,384), 100,5)
+                    pygame.draw.circle(window, redColor, (960,540), 100,5)
                 elif int(gain*attention_value) < 8:
-                    pygame.draw.circle(window, redColor, (680,384), 5)
+                    pygame.draw.circle(window, redColor, (960,540), 5)
                 else:
-                    pygame.draw.circle(window, redColor, (680,384), int(gain*attention_value),5)
+                    pygame.draw.circle(window, redColor, (960,540), int(gain*attention_value),5)
                 #pygame.draw.circle(window, whiteColor, (680,384), 30,1)
                 #pygame.draw.circle(window, greenColor, (680,384), Th_attention, 1)
                 #pygame.draw.circle(window, blueColor, (680,384), Th2_attention, 1)
                 #pygame.draw.circle(window, whiteColor, (680,384), 120, 1)
-                window.blit(attention_txt_img, (610,620))
-                window.blit(attention_value_img, (730,620))
+                window.blit(attention_txt_img, (900,780))
+                window.blit(attention_value_img, (1000,780))
                 gain_value_img = font.render(str(gain), False, whiteColor)
-                window.blit(gain_value_img, (680,670))
-                # debug value
-                #if debug:
+                window.blit(gain_value_img, (900,980))
                 debug_value = mqtt_value
                 debug_value_img = font.render(str(debug_value), False, whiteColor)
-                window.blit(debug_value_img, (760,670))
+                window.blit(debug_value_img, (1000,980))
             #else:
 		    #    pass
             elif analysis_mode==0:
@@ -289,7 +286,7 @@ def main():
 
         else:
             Wait_txt_img = font.render("Wait!!..Not yet receiving data from mindwave.", False, redColor)
-            window.blit(Wait_txt_img,(60,100))
+            window.blit(Wait_txt_img,(60,200))
             #window.blit(address_img, (1100,100))
             pass
 
