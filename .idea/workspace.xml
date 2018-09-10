@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16c2c01d-5f42-44af-8ce7-41c5f57b3948" name="Default Changelist" comment="modified to fit 1920x1080 screen">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="16c2c01d-5f42-44af-8ce7-41c5f57b3948" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindwave_v5_Blue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_v5_Blue.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindwave_v5_Yellow.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_v5_Yellow.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,29 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mindwave_v5_New.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mindwave_v5_New.sh">
+      <file leaf-file-name="mindwave_viewer_mqtt_v6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mindwave_v5_Yellow.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mindwave_v5_Yellow.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mindwave_viewer_mqtt_v5.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="288" column="42" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+            <state relative-caret-position="150">
+              <caret line="90" column="38" lean-forward="true" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
               <folding>
                 <element signature="e#72#97#0" expanded="true" />
               </folding>
@@ -74,35 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="startup_sub.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup_sub.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mindwave_viewer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="mindwave_viewer_mqtt_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v2.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="mindwave_v5_Blue.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mindwave_v5_Blue.sh">
+      <file leaf-file-name="mindwave_v6_KK.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mindwave_v6_KK.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -121,15 +82,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/startup_sub.py" />
+        <option value="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" />
+        <option value="$PROJECT_DIR$/mindwave_v6_Blue2.sh" />
+        <option value="$PROJECT_DIR$/mac number.txt" />
+        <option value="$PROJECT_DIR$/mindwave_viewer_mqtt_v6.py" />
         <option value="$PROJECT_DIR$/mindwave_v5_Yellow.sh" />
         <option value="$PROJECT_DIR$/mindwave_v5_Blue.sh" />
-        <option value="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="316" />
-    <option name="y" value="17" />
+    <option name="x" value="435" />
+    <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -174,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.mindwave_viewer_mqtt_v6">
     <configuration name="mindwave_viewer_mqtt_v5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,14 +151,37 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Kipom\PycharmProjects\BMI_Factory\archive\mindwave_viewer_mqtt_v5.py" />
       <option name="PARAMETERS" value="24:71:89:EC:57:ED" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="mindwave_viewer_mqtt_v6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BMI_Factory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mindwave_viewer_mqtt_v6.py" />
+      <option name="PARAMETERS" value="98:07:2D:7F:4C:2B" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.mindwave_viewer_mqtt_v5" />
+      <item itemvalue="Python.mindwave_viewer_mqtt_v6" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mindwave_viewer_mqtt_v6" />
         <item itemvalue="Python.mindwave_viewer_mqtt_v5" />
       </list>
     </recent_temporary>
@@ -238,18 +225,24 @@
       <option name="project" value="LOCAL" />
       <updated>1536508148958</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1536508428138</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536508428138</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="316" y="17" width="1400" height="1000" extended-state="0" />
+    <frame x="435" y="20" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329849" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32868758" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32868758" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -262,6 +255,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329849" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -269,17 +263,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
-    <MESSAGE value="update" />
     <MESSAGE value="modified to fit 1920x1080 screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified to fit 1920x1080 screen" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mindwave_v5_Blue.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -308,7 +296,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
@@ -352,51 +340,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_v5_Blue.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup_sub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_v5_New.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_v5_Yellow.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
@@ -440,7 +384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
@@ -481,7 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
@@ -505,7 +449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6825">
           <caret line="285" column="20" selection-start-line="285" selection-start-column="20" selection-end-line="285" selection-end-column="20" />
@@ -519,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_v5_Blue.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -535,17 +472,15 @@
     <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/KBRI_background_1360x768.jpg" />
+    <entry file="file://$PROJECT_DIR$/KBRI_background_1360x768_mode0.jpg" />
+    <entry file="file://$PROJECT_DIR$/KBRI_background_1360x768_mode1.jpg" />
+    <entry file="file://$PROJECT_DIR$/KBRI_background_1360x768_mode1_old.jpg" />
+    <entry file="file://$PROJECT_DIR$/KBRI_background_1360x768_mode2.jpg" />
     <entry file="file://$PROJECT_DIR$/mindwave_v5_New.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_v5_Yellow.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -556,10 +491,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v5.py">
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="288" column="42" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+        <state relative-caret-position="250">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/mindwave_viewer_mqtt_v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding>
+            <element signature="e#72#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_v6_Blue2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mac number.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_v6_KK.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_v5_Yellow.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_v5_Blue.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="90" column="38" lean-forward="true" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
           <folding>
             <element signature="e#72#97#0" expanded="true" />
           </folding>
