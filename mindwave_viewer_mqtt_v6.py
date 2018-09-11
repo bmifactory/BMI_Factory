@@ -1,5 +1,5 @@
 '''
-Created on 2018. 7. 25.
+Created on 2018. 9. 10.
 
 @author: Kipom
 '''
@@ -158,13 +158,10 @@ def main():
                             color = gammaColor
                         pygame.draw.rect(window, color, (210+i*30, 700-value*3, 25, value*3))
                 elif analysis_mode==2:
-                    #entropy_value = 100*spectral_entropy(recorder.raw[-512*3:], range(flen), 512)
-		            #entropy_value = 2*(entropy_value-50)
                     if debug==True:
                         print(entropy_value)
                     pass
                 elif analysis_mode==0:
-                    #mobility_value, complexity_value = hjorth(recorder.raw[-512*3:])
                     if debug==True:
                         print(mobility_value)
                     pass
