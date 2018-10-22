@@ -48,9 +48,9 @@ duration_level3 = 79
 
 # Set pygame parameter
 fullscreen = False
-bg_file = "Drone_bg1360_start.jpg"
-bg_file_close = "Drone_bg1360_start.jpg"
-bg_file_open = "Drone_bg1360_open.jpg"
+bg_file = "Drone_1360x968_start.jpg"
+bg_file_close = "Drone_1360x968_start.jpg"
+bg_file_open = "Drone_1360x968_open.jpg"
 message_range = 20
 message_list = list(range(message_range))
 m_event = 0

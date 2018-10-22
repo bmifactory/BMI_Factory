@@ -99,9 +99,9 @@ def main():
     entropyColor = pygame.Color(0,0,255)
 
     #Set pygame parameter
-    background_img_0 = pygame.image.load("Mindwave_bg1360_mode0.jpg")
-    background_img_1 = pygame.image.load("Mindwave_bg1360_mode1.jpg")
-    background_img_2 = pygame.image.load("Mindwave_bg1360_mode2.jpg")
+    background_img_0 = pygame.image.load("Mindwave_1360x968_mode0.jpg")
+    background_img_1 = pygame.image.load("Mindwave_1360x968_mode1.jpg")
+    background_img_2 = pygame.image.load("Mindwave_1360x968_mode2.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     font_title = pygame.font.Font("freesansbold.ttf", 30)
     #meditation_txt_img = font.render("Meditation", False, whiteColor)
