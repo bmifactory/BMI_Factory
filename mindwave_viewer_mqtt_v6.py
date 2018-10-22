@@ -32,7 +32,7 @@ Topic_1 = "bmi"
 Topic_2 = "spider"
 Topic_3 = "vib"
 
-mqttClient = mqtt.Client("mindwave1") # Create MQTT client
+mqttClient = mqtt.Client("mindwave0") # Create MQTT client
 try:
     mqttClient.connect(MQTT_name, 1883, 60) # Connect to MQTT server
     mqtt.Client.connected_flag=True
@@ -51,6 +51,8 @@ def main():
     num_attention = 0
     attention_value = 0
     entropy_value = 0
+    mobility_value = 0
+    complexity_value =0
     mqtt_value = 0
     gain = 1.4
     debug = False
@@ -64,8 +66,12 @@ def main():
     control_3 = True
 
     Th_attention = 60
+    Th_entropy = 60
+    Th_complexity = 200
 
     Th2_attention = 90
+    Th2_entropy = 85
+    Th2_complexity = 400
 
     pygame.init()
     fpsClock= pygame.time.Clock()
@@ -73,13 +79,14 @@ def main():
     if fullscreen==True:
         window = pygame.display.set_mode((1920,1080),pygame.FULLSCREEN)
     else:
-        window = pygame.display.set_mode((1920,1080),pygame.RESIZABLE)
+        #window = pygame.display.set_mode((1920,1080),pygame.RESIZABLE)
+        window = pygame.display.set_mode((1360,786),pygame.RESIZABLE)
 
     pygame.display.set_caption("Mindwave Viewer")
 
     blackColor = pygame.Color(0,0,0)
     redColor = pygame.Color(255,0,0)
-    blueColor = pygame.Color(0,0,255)
+    blueColor = pygame.Color(0,216,255)
     whiteColor = pygame.Color(255,255,255)
     greenColor = pygame.Color(0,255,0)
     deltaColor = pygame.Color(100,0,0)
@@ -92,14 +99,16 @@ def main():
     entropyColor = pygame.Color(0,0,255)
 
     #Set pygame parameter
-    background_img_0 = pygame.image.load("Mode0_background.jpg")
-    background_img_1 = pygame.image.load("Mode1_background.jpg")
-    background_img_2 = pygame.image.load("Mode2_background.jpg")
+    background_img_0 = pygame.image.load("Mindwave_bg1360_mode0.jpg")
+    background_img_1 = pygame.image.load("Mindwave_bg1360_mode1.jpg")
+    background_img_2 = pygame.image.load("Mindwave_bg1360_mode2.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     font_title = pygame.font.Font("freesansbold.ttf", 30)
     #meditation_txt_img = font.render("Meditation", False, whiteColor)
     attention_txt_img = font.render("Attention", False, whiteColor)
     attention_value_img = font.render("0", False, whiteColor)
+    entropy_txt_img = font.render("Entropy", False, whiteColor)
+    entropy_value_img = font.render("0", False, whiteColor)
     address_txt_img = font.render(args.address,False, whiteColor)
 
     while quit is False:
@@ -158,10 +167,13 @@ def main():
                             color = gammaColor
                         pygame.draw.rect(window, color, (210+i*30, 700-value*3, 25, value*3))
                 elif analysis_mode==2:
+                    #entropy_value = 100*spectral_entropy(recorder.raw[-512*3:], range(flen), 512)
+		            #entropy_value = 2*(entropy_value-50)
                     if debug==True:
                         print(entropy_value)
                     pass
                 elif analysis_mode==0:
+                    #mobility_value, complexity_value = hjorth(recorder.raw[-512*3:])
                     if debug==True:
                         print(mobility_value)
                     pass
@@ -172,12 +184,12 @@ def main():
             #Show raw EEG signal
             if raw_eeg:
                 lv = 0
-                for i,value in enumerate(recorder.raw[-1920:]):
+                for i,value in enumerate(recorder.raw[-1360:]):
                     v = value/ 8.0
                     if analysis_mode==0:
-                        pygame.draw.line(window, eegColor, (i+25, 400-lv), (i+25, 400-v))
+                        pygame.draw.line(window, blueColor, (i+25, 400-lv), (i+25, 400-v))
                     else:
-                        pygame.draw.line(window, eegColor, (i+25, 400-lv), (i+25, 400-v))
+                        pygame.draw.line(window, blueColor, (i+25, 400-lv), (i+25, 400-v))
                     lv = v
                 raw_img = font.render("press F2 to hide Raw EEG", False, whiteColor)
                 window.blit(raw_img, (400,980))

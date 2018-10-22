@@ -67,10 +67,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="435" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="1230" />
+    <option name="y" value="26" />
+    <option name="width" value="2438" />
+    <option name="height" value="1698" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -131,6 +131,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="mindwave_viewer_mqtt_v6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
@@ -149,6 +152,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.mindwave_viewer_mqtt_v5" />
