@@ -229,6 +229,7 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+<<<<<<< Updated upstream
     </configuration>
     <configuration name="mindwave_for_tello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
@@ -250,6 +251,8 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+=======
+>>>>>>> Stashed changes
     </configuration>
     <configuration name="mindwave_viewer_mqtt_v6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
@@ -284,6 +287,12 @@
         <item itemvalue="Python.mindwave_for_tello" />
         <item itemvalue="Python.Tello_mqtt" />
         <item itemvalue="Python.mindwave_viewer_mqtt_v6" />
+<<<<<<< Updated upstream
+=======
+        <item itemvalue="Python.mindwave_viewer_mqtt_v5" />
+        <item itemvalue="Python.mindwave_viewer_mqtt_v6" />
+        <item itemvalue="Python.mindwave_viewer_mqtt_v5" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
