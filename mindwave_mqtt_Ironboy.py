@@ -1,7 +1,6 @@
 '''
-Created on 2018. 9. 10.
-@author: Kipom
-This program is based on
+Created on 2018. 10. 24.
+@author: Kipom Kim
 '''
 # -*- coding: utf-8 -*-
 '''

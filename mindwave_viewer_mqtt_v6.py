@@ -1,7 +1,6 @@
 '''
-Created on 2018. 9. 10.
-
-@author: Kipom
+Created on 2018. 10. 24.
+@author: Kipom Kim
 '''
 # -*- coding: utf-8 -*-
 import pygame, sys, numpy
@@ -18,7 +17,7 @@ from startup_sub import *
 
 import paho.mqtt.client as mqtt
 
-description = """Pygame Example
+description = """mindwave viewer with MQTT protocol
 """
 
 # Set mindwave mobile
