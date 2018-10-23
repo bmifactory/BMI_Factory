@@ -257,7 +257,7 @@ def main():
                         # print('level1')
                         m_event_update('start')
                         if mqtt_connected:
-                            command = 'start'
+                            mqtt_command = 'start'
                             #mqttClient.publish("robot", command)
                     elif attention_duration == duration_level2:
                         # print('level2')
