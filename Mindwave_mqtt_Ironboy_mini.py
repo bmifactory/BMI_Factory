@@ -49,9 +49,9 @@ duration_level3 = 79
 
 # Set pygame parameter
 fullscreen = False
-bg_file = "Ironboy_1024x600_start.jpg"
-bg_file_close = "Ironboy_1024x600_start.jpg"
-bg_file_open = "Ironboy_1024x600_open.jpg"
+bg_file = "Ironboy_1360x968_start.jpg"
+bg_file_close = "Ironboy_1360x968_start.jpg"
+bg_file_open = "Ironboy_1360x968_open.jpg"
 message_range = 20
 message_list = list(range(message_range))
 m_event = 0
@@ -71,7 +71,7 @@ def setup():
     global mqttClient, mqtt_connected, takeoff_flaq
 
     # Create MQTT client
-    mqttClient = mqtt.Client("neurosky")
+    mqttClient = mqtt.Client("mindwave")
     mqttClient.on_connect = on_connect
     # mqttClient.on_message = on_message
     try:
@@ -96,9 +96,9 @@ def setup():
     fpsClock = pygame.time.Clock()
     pygame.display.set_caption("Mindwave for IronBoy")
     if fullscreen is True:
-        window = pygame.display.set_mode((1024, 600), pygame.FULLSCREEN)
+        window = pygame.display.set_mode((1360, 768), pygame.FULLSCREEN)
     else:
-        window = pygame.display.set_mode((1024, 600), pygame.RESIZABLE)
+        window = pygame.display.set_mode((1360, 768), pygame.RESIZABLE)
     background_img = pygame.image.load(bg_file)
     pygame_update(m_event)
 
@@ -111,22 +111,22 @@ def pygame_update(message_lane):
     for i in range(20):
         if i < message_lane - 1:
             message_img = font.render("# "+str(message_list[i]), False, whiteColor)
-            window.blit(message_img, (800, 100 + i * 30))
+            window.blit(message_img, (1200, 100 + i * 30))
         elif i == message_lane - 1:
             message_img = font.render("# "+str(message_list[i]), False, greenColor)
-            window.blit(message_img, (800, 100 + i * 30))
+            window.blit(message_img, (1200, 100 + i * 30))
         else:
             message_img = font.render("", False, whiteColor)
-            window.blit(message_img, (800, 80 + i * 30))
+            window.blit(message_img, (1200, 80 + i * 30))
 
     if int(attention_value) > 100:
         attention_value = 100
-        pygame.draw.circle(window, attentionColor, (512, 310), 100, 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), 100, 2)
     elif int(gain*attention_value) < 8:
         # attention_value = 0
-        pygame.draw.circle(window, attentionColor, (512, 310), 8, 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), 8, 2)
     else:
-        pygame.draw.circle(window, attentionColor, (512, 310), int(attention_value), 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), int(attention_value), 2)
 
     font = pygame.font.Font("bgothl.ttf", 30)
     if takeoff_flag is True:
@@ -134,35 +134,35 @@ def pygame_update(message_lane):
         attention_txt_img = font.render("Attantion", False, whiteColor)
         duration_value_img = font.render(str(attention_duration), False, whiteColor)
         duration_txt_img = font.render("Charging", False, whiteColor)
-        window.blit(attention_txt_img, (190, 490))
-        window.blit(attention_value_img, (220, 520))
-        window.blit(duration_txt_img, (690, 490))
-        window.blit(duration_value_img, (745, 520))
+        window.blit(attention_txt_img, (280, 700))
+        window.blit(attention_value_img, (320, 650))
+        window.blit(duration_txt_img, (930, 700))
+        window.blit(duration_value_img, (970, 650))
         angle_attention = (2*attention_value-130+random.randint(0, 5))*0.01745329252
-        draw_gauge_needle(260, 456, angle_attention, 160, 6)
+        draw_gauge_needle(358, 582, angle_attention, 160, 6)
         angle_duration = (2*attention_duration-42)*0.01745329252
-        draw_gauge_needle(767, 456, angle_duration, 160, 6)
+        draw_gauge_needle(1005, 582, angle_duration, 160, 6)
     else:
         attention_value_img = font.render(str(attention_value), False, blackColor)
         attention_txt_img = font.render("Attantion", False, blackColor)
         duration_value_img = font.render(str(attention_duration), False, blackColor)
         duration_txt_img = font.render("Charging", False, blackColor)
-        window.blit(attention_txt_img, (190, 460))
-        window.blit(attention_value_img, (230, 490))
-        window.blit(duration_txt_img, (660, 460))
-        window.blit(duration_value_img, (700, 490))
+        window.blit(attention_txt_img, (280, 600))
+        window.blit(attention_value_img, (320, 550))
+        window.blit(duration_txt_img, (930, 600))
+        window.blit(duration_value_img, (970, 550))
         length_attention = 2*attention_value+random.randint(0, 5)
-        draw_gauge_bar(270, 450, 1, length_attention, 100)
+        draw_gauge_bar(358, 532, 1, length_attention, 100)
         if attention_duration >= 21.1:
             attention_duration = 21.1
         length_duration = 10*(attention_duration+1)
-        draw_gauge_bar(730, 450, 1, length_duration, 100)
+        draw_gauge_bar(1005, 532, 1, length_duration, 100)
 
     if control_mode is True:
         pass
     else:
         mode_img = font.render("press F1 for control mode", False, whiteColor)
-        window.blit(mode_img, (550, 550))
+        window.blit(mode_img, (800, 700))
     pygame.display.update()
 
 def draw_gauge_needle(center_x, center_y, ang, length, width):
@@ -232,7 +232,7 @@ def main():
                     lv = v
             else:
                 raw_img = font.render("press e key to show raw EEG", False, whiteColor)
-                window.blit(raw_img, (10, 500))
+                window.blit(raw_img, (100, 710))
 
             if attention_value > Th_attention:
                 if control_mode is True:

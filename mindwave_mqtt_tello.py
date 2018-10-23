@@ -70,7 +70,7 @@ def setup():
     global mqttClient, mqtt_connected, takeoff_flaq
 
     # Create MQTT client
-    mqttClient = mqtt.Client("neurosky1")
+    mqttClient = mqtt.Client("mindwave")
     mqttClient.on_connect = on_connect
     # mqttClient.on_message = on_message
     try:
@@ -230,7 +230,7 @@ def main():
                     pygame.draw.line(window, eegColor, (i+25, 180-lv), (i+25, 180-v))
                     lv = v
             else:
-                raw_img = font.render("press F2 to show Raw EEG", False, whiteColor)
+                raw_img = font.render("press e to show Raw EEG", False, whiteColor)
                 window.blit(raw_img, (100, 710))
 
             if attention_value > Th_attention:
