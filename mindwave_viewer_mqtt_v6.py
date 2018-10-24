@@ -31,6 +31,21 @@ Topic_1 = "bmi"
 Topic_2 = "spider"
 Topic_3 = "vib"
 
+blackColor = pygame.Color(0, 0, 0)
+redColor = pygame.Color(255, 0, 0)
+blueColor = pygame.Color(0, 216, 255)
+whiteColor = pygame.Color(255, 255, 255)
+greenColor = pygame.Color(0, 255, 0)
+deltaColor = pygame.Color(100, 0, 0)
+thetaColor = pygame.Color(0, 0, 255)
+alphaColor = pygame.Color(255, 0, 0)
+betaColor = pygame.Color(0, 255, 00)
+gammaColor = pygame.Color(0, 255, 255)
+# eegColor = pygame.Color(255,255,255)
+eegColor = pygame.Color(255, 255, 0)
+#entropyColor = pygame.Color(0, 0, 255)
+attentionColor = pygame.Color(10, 85, 145)
+
 mqttClient = mqtt.Client("mindwave") # Create MQTT client
 try:
     mqttClient.connect(MQTT_name, 1883, 60) # Connect to MQTT server
@@ -43,6 +58,8 @@ except:
     pass
     
 def main():
+    global window
+
     fullscreen = False
     raw_eeg = True
     spectra = []
@@ -72,6 +89,9 @@ def main():
     Th2_entropy = 85
     Th2_complexity = 400
 
+    attention_duration = 0
+    duration_level3 = 79
+
     pygame.init()
     fpsClock= pygame.time.Clock()
 
@@ -82,20 +102,6 @@ def main():
         window = pygame.display.set_mode((1360,768),pygame.RESIZABLE)
 
     pygame.display.set_caption("Mindwave Viewer")
-
-    blackColor = pygame.Color(0,0,0)
-    redColor = pygame.Color(255,0,0)
-    blueColor = pygame.Color(0,216,255)
-    whiteColor = pygame.Color(255,255,255)
-    greenColor = pygame.Color(0,255,0)
-    deltaColor = pygame.Color(100,0,0)
-    thetaColor = pygame.Color(0,0,255)
-    alphaColor = pygame.Color(255,0,0)
-    betaColor = pygame.Color(0,255,00)
-    gammaColor = pygame.Color(0,255,255)
-    #eegColor = pygame.Color(255,255,255)
-    eegColor = pygame.Color(255,255,0)
-    entropyColor = pygame.Color(0,0,255)
 
     #Set pygame parameter
     background_img_0 = pygame.image.load("Mindwave_1360x968_mode0.jpg")
@@ -201,19 +207,28 @@ def main():
             if analysis_mode==0:
                 if gain*attention_value > Th_attention and gain*attention_value < Th2_attention :
                     mqtt_value = 11
+                    attention_duration = attention_duration + 1
                 elif gain*attention_value > Th2_attention:
                     mqtt_value = 22
+                    attention_duration = attention_duration + 1
                 else :
                     mqtt_value = 0
+                    attention_duration = 0
             elif analysis_mode==2:
                 if gain*attention_value > Th_attention and gain*attention_value < Th2_attention :
                     mqtt_value = 11
+                    attention_duration = attention_duration + 1
                 elif gain*attention_value > Th2_attention:
                     mqtt_value = 22
+                    attention_duration = attention_duration + 1
                 else :
                     mqtt_value = 0
+                    attention_duration = 0
             else:
                 mqtt_value = 0
+
+            if attention_duration > duration_level3:
+                attention_duration = 0
 
             if mqttClient.connected_flag == True:
                 MQTT_connection = 0
@@ -255,11 +270,11 @@ def main():
             elif analysis_mode==2:
                 attention_value_img = font.render(str(int(gain*attention_value)), False, whiteColor)
                 if int(gain*attention_value) > 100:
-                    pygame.draw.circle(window, whiteColor, (678,394), 140, 1)
+                    pygame.draw.circle(window, attentionColor, (678,394), 140, 1)
                 elif int(gain*attention_value) < 8:
-                    pygame.draw.circle(window, whiteColor, (678,394), 1)
+                    pygame.draw.circle(window, attentionColor, (678,394), 1)
                 else:
-                    pygame.draw.circle(window, whiteColor, (678,394), int(1.4*gain*attention_value), 1)
+                    pygame.draw.circle(window, attentionColor, (678,394), int(1.4*gain*attention_value), 1)
                 #pygame.draw.circle(window, whiteColor, (680,384), 30,1)
                 #pygame.draw.circle(window, greenColor, (680,384), Th_attention, 1)
                 #pygame.draw.circle(window, blueColor, (680,384), Th2_attention, 1)
@@ -268,6 +283,10 @@ def main():
                 window.blit(attention_value_img, (725,612))
                 gain_value_img = font.render(str(gain), False, whiteColor)
                 window.blit(gain_value_img, (725,650))
+                angle_attention = (2 * attention_value - 130 + random.randint(0, 5)) * 0.01745329252
+                draw_gauge_needle(358, 582, angle_attention, 160, 6)
+                angle_duration = (2 * attention_duration - 42) * 0.01745329252
+                draw_gauge_needle(1005, 582, angle_duration, 160, 6)
                 #debug_value = mqtt_value
                 #debug_value_img = font.render(str(debug_value), False, whiteColor)
                 #window.blit(debug_value_img, (680,612))
@@ -379,6 +398,11 @@ def main():
         #Display update            
         pygame.display.update()
         fpsClock.tick(12)
+
+def draw_gauge_needle(center_x, center_y, ang, length, width):
+    end_x = center_x + length * sin(ang)
+    end_y = center_y - length * cos(ang)
+    pygame.draw.line(window, redColor, (center_x, center_y), (end_x, end_y), width)
 
 #mqtt close
 #mqttClient.loop_stop()
