@@ -11,7 +11,7 @@ Created on 2018. 10. 24.
 # from numpy.random import randn
 # from mindwave.pyeeg import bin_power
 '''
-import pygame, random, sys, numpy
+import pygame, random, sys, numpy, os
 from numpy import *
 from pygame import *
 from mindwave3.parser import ThinkGearParser, TimeSeriesRecorder
@@ -47,6 +47,7 @@ duration_level3 = 79
 
 # Set pygame parameter
 fullscreen = False
+os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (0,0)
 bg_file = "Drone_1360x968_start.jpg"
 bg_file_close = "Drone_1360x968_start.jpg"
 bg_file_open = "Drone_1360x968_open.jpg"

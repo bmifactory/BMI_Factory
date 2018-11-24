@@ -4,6 +4,7 @@ tellopy sample using keyboard and video player
 """
 import time
 import sys
+import os
 import tellopy
 import pygame
 from pygame import *
@@ -35,6 +36,7 @@ roll = 0.0
 
 # Set pygame parameter
 fullscreen = False
+os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (1360,0)
 bg_file_1="Tello_bg_1.jpg"
 bg_file_2="Tello_bg_2.jpg"
 message_max = 10
@@ -51,6 +53,38 @@ def init_tello():
         drone.start_video()
         pygame.time.wait(2)
         drone.subscribe(drone.EVENT_VIDEO_FRAME, tello_handler)
+
+def init_pygame():
+    global window, background_img, font, fpsClock
+    global blackColor, blueColor, whiteColor, greenColor, redColor
+    pygame.init()
+    font = pygame.font.Font("bgothl.ttf", 20)
+    blackColor = pygame.Color(0, 0, 0)
+    redColor = pygame.Color(255, 0, 0)
+    blueColor = pygame.Color(0, 0, 255)
+    whiteColor = pygame.Color(255, 255, 255)
+    greenColor = pygame.Color(0, 255, 0)
+    window = pygame.display.set_mode((560, 575), pygame.RESIZABLE)
+    background_img = pygame.image.load(bg_file_1)
+    pygame_update(event_log)
+    # fpsClock = pygame.time.Clock()
+
+def init_mqtt():
+    # Create MQTT client
+    mqttClient = mqtt.Client("Tello1")
+    mqttClient.on_connect = on_connect
+    mqttClient.on_message = on_message
+    # mqttClient.on_message = on_disconnect
+    # Connect to MQTT server
+    try:
+        mqttClient.connect(MQTT_name, 1883, 60)
+        print("MQTT Server connected")
+        MQTT_connection = 0
+        mqttClient.loop_start()
+    except:
+        print("MQTT Server disconnected")
+        MQTT_connection = 1
+        pass
 
 def tello_handler(event, sender, data, **args):
     global prev_flight_data
@@ -75,7 +109,7 @@ def tello_handler(event, sender, data, **args):
             prev_flight_data = str(data)
     elif event is drone.EVENT_VIDEO_FRAME:
         if video_player is None:
-            video_player = Popen(['mplayer', '-xy', '500', '-geometry', '70%:30%', '-fps', '35', '-'], stdin=PIPE)
+            video_player = Popen(['mplayer', '-xy', '560', '-geometry', '1360:660', '-fps', '35', '-'], stdin=PIPE)
         try:
             video_player.stdin.write(data)
         except IOError as err:
@@ -189,23 +223,6 @@ def on_message(client, userdata, msg):
             else:
                 event_log_update('Wrong comment')
 
-def init_mqtt():
-    # Create MQTT client
-    mqttClient = mqtt.Client("Tello1")
-    mqttClient.on_connect = on_connect
-    mqttClient.on_message = on_message
-    # mqttClient.on_message = on_disconnect
-    # Connect to MQTT server
-    try:
-        mqttClient.connect(MQTT_name, 1883, 60)
-        print("MQTT Server connected")
-        MQTT_connection = 0
-        mqttClient.loop_start()
-    except:
-        print("MQTT Server disconnected")
-        MQTT_connection = 1
-        pass
-
 def pygame_update(message_lane):
     global message_list, window, message_img, background_img, battary
     global attention_duration, attention_value, control_mode, takeoff_flag
@@ -243,21 +260,6 @@ def event_log_update(message):
         event_log = 0
     else:
         event_log = event_log + 1
-
-def init_pygame():
-    global window, background_img, font, fpsClock
-    global blackColor, blueColor, whiteColor, greenColor, redColor
-    pygame.init()
-    font = pygame.font.Font("bgothl.ttf", 20)
-    blackColor = pygame.Color(0, 0, 0)
-    redColor = pygame.Color(255, 0, 0)
-    blueColor = pygame.Color(0, 0, 255)
-    whiteColor = pygame.Color(255, 255, 255)
-    greenColor = pygame.Color(0, 255, 0)
-    window = pygame.display.set_mode((500, 650), pygame.RESIZABLE)
-    background_img = pygame.image.load(bg_file_1)
-    pygame_update(event_log)
-    # fpsClock = pygame.time.Clock()
 
 def main():
     global window, background_img, font, control_mode, fpsClock
