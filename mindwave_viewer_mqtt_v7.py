@@ -3,7 +3,7 @@ Created on 2018. 10. 24.
 @author: Kipom Kim
 '''
 # -*- coding: utf-8 -*-
-import pygame, sys, numpy
+import pygame, sys, numpy, os
 from numpy import *
 from pygame import *
 import scipy, time
@@ -82,12 +82,7 @@ def main():
     control_3 = True
 
     Th_attention = 60
-    Th_entropy = 60
-    Th_complexity = 200
-
     Th2_attention = 90
-    Th2_entropy = 85
-    Th2_complexity = 400
 
     attention_duration = 0
     duration_level3 = 79
@@ -99,6 +94,7 @@ def main():
         window = pygame.display.set_mode((1920,1080),pygame.FULLSCREEN)
     else:
         #window = pygame.display.set_mode((1920,1080),pygame.RESIZABLE)
+        os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (0,0)
         window = pygame.display.set_mode((1360,768),pygame.RESIZABLE)
 
     pygame.display.set_caption("Mindwave Viewer")
@@ -106,7 +102,8 @@ def main():
     #Set pygame parameter
     background_img_0 = pygame.image.load("Mindwave_1360x968_mode0.jpg")
     background_img_1 = pygame.image.load("Mindwave_1360x968_mode1.jpg")
-    background_img_2 = pygame.image.load("Mindwave_1360x968_mode2-1.jpg")
+    background_img_2 = pygame.image.load("Mindwave_1360x968_mode2.jpg")
+    background_img_3 = pygame.image.load("Mindwave_1360x968_mode3.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     font_title = pygame.font.Font("freesansbold.ttf", 30)
     #meditation_txt_img = font.render("Meditation", False, whiteColor)
@@ -130,6 +127,8 @@ def main():
             window.blit(background_img_1,(0,0))
         elif analysis_mode == 2:
             window.blit(background_img_2,(0,0))
+        elif analysis_mode == 3:
+            window.blit(background_img_3,(0,0))
         else:
             mode_img = font_title.render(" ", False, whiteColor)
             window.blit(mode_img, (550,100))
@@ -224,6 +223,16 @@ def main():
                 else :
                     mqtt_value = 0
                     attention_duration = 0
+            elif analysis_mode==3:
+                if gain*attention_value > Th_attention and gain*attention_value < Th2_attention :
+                    mqtt_value = 11
+                    attention_duration = attention_duration + 1
+                elif gain*attention_value > Th2_attention:
+                    mqtt_value = 22
+                    attention_duration = attention_duration + 1
+                else :
+                    mqtt_value = 0
+                    attention_duration = 0
             else:
                 mqtt_value = 0
 
@@ -268,6 +277,24 @@ def main():
                 #attention_value_img = font.render(str(attention_value), False, whiteColor)
                 #window.blit(attention_value_img, (1580,920))
             elif analysis_mode==2:
+                attention_value_img = font.render(str(int(gain*attention_value)), False, whiteColor)
+                if int(gain*attention_value) > 100:
+                    pygame.draw.circle(window, redColor, (680,384), 120, 3)
+                elif int(gain*attention_value) < 8:
+                    pygame.draw.circle(window, redColor, (680,384), 8, 3)
+                else:
+                    pygame.draw.circle(window, redColor, (680,384), int(gain*attention_value), 3)
+                #pygame.draw.circle(window, whiteColor, (680,384), 30,1)
+                pygame.draw.circle(window, greenColor, (680,384), Th_attention, 1)
+                pygame.draw.circle(window, blueColor, (680,384), Th2_attention, 1)
+                #pygame.draw.circle(window, whiteColor, (680,384), 140, 1)
+                window.blit(attention_txt_img, (600,612))
+                window.blit(attention_value_img, (725,612))
+                gain_value_img = font.render(str('%.1f' % gain), False, whiteColor)
+                mqtt_value_img = font.render(str(mqtt_value), False, whiteColor)
+                window.blit(gain_value_img, (725,650))
+                window.blit(mqtt_value_img, (800,650))
+            elif analysis_mode==3:
                 attention_value_img = font.render(str(int(gain*attention_value)), False, whiteColor)
                 if int(gain*attention_value) > 100:
                     pygame.draw.circle(window, attentionColor, (678,394), 140, 1)
@@ -333,7 +360,7 @@ def main():
                         raw_eeg = False
                     elif analysis_mode == 2:
                         raw_eeg = False
-                    elif analysis_mode == 3:
+                    elif analysis_mode == Max_mode:
                         raw_eeg = True
                         analysis_mode = 0
                     else:

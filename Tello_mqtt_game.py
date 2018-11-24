@@ -33,13 +33,20 @@ throttle = 0.0
 yaw = 0.0
 pitch = 0.0
 roll = 0.0
+start_time = 0.0
+takeoff_time = 0.0
+land_time = 0.0
+fly_time = 0.0
+set_time = 30.
+takeoff_flag = False
+
 
 # Set pygame parameter
 fullscreen = False
 os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (1360,0)
 bg_file_1="Tello_bg_1.jpg"
 bg_file_2="Tello_bg_2.jpg"
-message_max = 10
+message_max = 5
 message_list = list(range(message_max))
 event_log = 0
 
@@ -133,8 +140,12 @@ def on_message(client, userdata, msg):
         print(command_str)
         if command_str == "b'takeoff'":
             background_img = pygame.image.load(bg_file_2)
+            takeoff_time = pygame.time.get_ticks()
+            takeoff_flag = True
         elif command_str == "b'land'":
             background_img = pygame.image.load(bg_file_1)
+            background_img = pygame.image.load(bg_file_1)
+            land_time = pygame.time.get_ticks()
         mqtt_command_img = font.render(command_str, False, whiteColor)
         window.blit(mqtt_command_img, (50, 100))
         event_log_update(command_str)
@@ -143,6 +154,7 @@ def on_message(client, userdata, msg):
                 drone.takeoff()
                 # battary = tello.get_battery()
             elif command_str == "b'level1'":
+                set_time = set_time + 1
                 if dir_flag == 0:
                     drone.counter_clockwise(speed)
                     pygame.time.wait(2000)
@@ -160,6 +172,7 @@ def on_message(client, userdata, msg):
                     #drone.left(0)
                     dir_flag = 0
             elif command_str == "b'level2'":
+                set_time = set_time + 3
                 if battary > 50:
                     drone.flip_forward()
                 else:
@@ -226,6 +239,7 @@ def on_message(client, userdata, msg):
 def pygame_update(message_lane):
     global message_list, window, message_img, background_img, battary
     global attention_duration, attention_value, control_mode, takeoff_flag
+    global takeoff_time, land_time, fly_time
     font = pygame.font.Font("bgothl.ttf", 20)
     # font = pygame.font.Font("freesansbold.ttf", 20)
     window.blit(background_img, (0, 0))
@@ -239,10 +253,20 @@ def pygame_update(message_lane):
         else:
             message_img = font.render("", False, whiteColor)
             window.blit(message_img, (50, 270 + i * 30))
-    draw_gauge_bar(49, 309, 0, 4*battary, 10)
+    draw_gauge_bar(49, 309, 0, 4*battary, 10, redColor)
+    draw_gauge_bar(49, 550, 0, 8*set_time, 20, blueColor)
+    set_time_str = '{:.1f}'.format(set_time)
+    font = pygame.font.Font("bgothl.ttf", 30)
+    if takeoff_flag == True:
+        time_img = font.render("Remain time : "+set_time_str, False, blueColor)
+        window.blit(time_img, (80, 500))
+    if takeoff_flag == False:
+        time_img = font.render("Total flight : "+str(fly_time)+" sec", False, blueColor)
+        window.blit(time_img, (80, 500))
+    font = pygame.font.Font("bgothl.ttf", 20)
     pygame.display.update()
 
-def draw_gauge_bar(center_x, center_y, dir, length, width):
+def draw_gauge_bar(center_x, center_y, dir, length, width, color):
     global redColor
     if dir is 0:
         end_x = center_x + length
@@ -250,7 +274,7 @@ def draw_gauge_bar(center_x, center_y, dir, length, width):
     else :
         end_x = center_x
         end_y = center_y - length
-    pygame.draw.line(window, redColor, (center_x, center_y), (end_x, end_y), width)
+    pygame.draw.line(window, color, (center_x, center_y), (end_x, end_y), width)
 
 def event_log_update(message):
     global event_log, message_list
@@ -273,6 +297,20 @@ def main():
 
     quit = False
     while quit is False:
+        if takeoff_flag == True:
+            set_time = set_time - 0.1
+            if set_time <= 0:
+                msg = "land"
+                takeoff_flag = True
+                land_time = pygame.time.get_ticks()
+                fly_time = (land_time - takeoff_time) / 1000.0
+                takeoff_flag = False
+                background_img = pygame.image.load(bg_file_1)
+                event_log_update(msg)
+                if tello_connected:
+                    drone.land()
+            else:
+                pygame_update(event_log)
         pygame.time.wait(100)
         # loop with pygame.event.get() is too much tight w/o some sleep
         for event in pygame.event.get():
@@ -287,6 +325,10 @@ def main():
                 elif event.key == K_t:
                     msg = 'takeoff'
                     background_img = pygame.image.load(bg_file_2)
+                    takeoff_time = pygame.time.get_ticks()
+                    takeoff_flag = True
+                    set_time = 30
+                    #background_img = pygame.image.load(bg_file_1)
                     event_log_update(msg)
                     if control_mode:
                         if tello_connected:
@@ -295,6 +337,9 @@ def main():
                 elif event.key == K_l:
                     msg = 'land'
                     background_img = pygame.image.load(bg_file_1)
+                    land_time = pygame.time.get_ticks()
+                    fly_time = (land_time - takeoff_time) / 1000.0
+                    takeoff_flag = False
                     event_log_update(msg)
                     if tello_connected:
                         drone.land()
