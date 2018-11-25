@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tello_bg_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Tello_bg_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tello_bg_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Tello_bg_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tello_mqtt_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tello_mqtt_game.py" afterDir="false" />
-    </list>
+    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +12,7 @@
     <session id="-1747921703">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="6" />
@@ -29,12 +24,12 @@
         <counts>
           <entry key="py" value="229" />
           <entry key="sh" value="14" />
-          <entry key="txt" value="30" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="PLAIN_TEXT" value="52" />
           <entry key="Python" value="229" />
         </counts>
       </usages-collector>
@@ -335,19 +330,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543080186129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="modified">
+      <created>1543140309858</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543140309858</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="185" y="57" width="1219" height="916" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32375318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32908162" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32908162" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -392,10 +393,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <MESSAGE value="modified" />
     <MESSAGE value="dev-Nov upload" />
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Mindwave_mqtt_Ironboy_mini.py" />
