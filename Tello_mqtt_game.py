@@ -19,6 +19,7 @@ Topic_name = "tello1"
 # For tello
 tello_connected = True
 control_mode = True
+game_mode = True
 video_stream = True
 prev_flight_data = None
 video_player = None
@@ -39,7 +40,6 @@ land_time = 0.0
 fly_time = 0.0
 set_time = 30.
 takeoff_flag = False
-
 
 # Set pygame parameter
 fullscreen = False
@@ -135,44 +135,39 @@ def on_connect(client, userdata, flags, rc):
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     global event_log, dir_flag, updown_flag, background_img
+    global takeoff_time, takeoff_flag, land_time, set_time
     if msg.topic == Topic_name:
         command_str = str(msg.payload)
         print(command_str)
         if command_str == "b'takeoff'":
             background_img = pygame.image.load(bg_file_2)
             takeoff_time = pygame.time.get_ticks()
+            if tello_connected:
+                drone.takeoff()
             takeoff_flag = True
         elif command_str == "b'land'":
             background_img = pygame.image.load(bg_file_1)
-            background_img = pygame.image.load(bg_file_1)
-            land_time = pygame.time.get_ticks()
-        mqtt_command_img = font.render(command_str, False, whiteColor)
-        window.blit(mqtt_command_img, (50, 100))
-        event_log_update(command_str)
-        if tello_connected:
-            if command_str == "b'takeoff'":
-                drone.takeoff()
-                # battary = tello.get_battery()
-            elif command_str == "b'level1'":
-                set_time = set_time + 1
+            if takeoff_flag == True:
+                land_time = pygame.time.get_ticks()
+            if tello_connected:
+                drone.land()
+            takeoff_flag = False
+        elif command_str == "b'level1'":
+            set_time = set_time + 1
+            if tello_connected:
                 if dir_flag == 0:
                     drone.counter_clockwise(speed)
                     pygame.time.wait(2000)
                     drone.counter_clockwise(0)
-                    #drone.right(speed)
-                    #pygame.time.wait(duration)
-                    #drone.right(0)
                     dir_flag = 1
                 elif dir_flag == 1:
                     drone.clockwise(speed)
                     pygame.time.wait(2000)
                     drone.clockwise(0)
-                    #drone.left(speed)
-                    #pygame.time.wait(duration)
-                    #drone.left(0)
                     dir_flag = 0
-            elif command_str == "b'level2'":
-                set_time = set_time + 3
+        elif command_str == "b'level2'":
+            set_time = set_time + 3
+            if tello_connected:
                 if battary > 50:
                     drone.flip_forward()
                 else:
@@ -186,55 +181,57 @@ def on_message(client, userdata, msg):
                         pygame.time.wait(2000)
                         drone.clockwise(0)
                         dir_flag = 0
-            elif command_str == "b'land'":
-                drone.land()
-            elif command_str == "b'left'":
-                if tello_connected:
+        elif command_str == "b'left'":
+            if tello_connected:
                     drone.left(speed)
                     pygame.time.wait(duration)
                     drone.left(0)
-            elif command_str == "b'right'":
-                if tello_connected:
+        elif command_str == "b'right'":
+            if tello_connected:
                     drone.right(speed)
                     pygame.time.wait(duration)
                     drone.right(0)
-            elif command_str == "b'forward'":
-                if tello_connected:
+        elif command_str == "b'forward'":
+            if tello_connected:
                     drone.forward(speed)
                     pygame.time.wait(duration)
                     drone.forward(0)
-            elif command_str == "b'back'":
-                if tello_connected:
+        elif command_str == "b'back'":
+            if tello_connected:
                     drone.backward(speed)
                     pygame.time.wait(duration)
                     drone.backward(0)
-            elif command_str == "b'cw'":
-                if tello_connected:
+        elif command_str == "b'cw'":
+            if tello_connected:
                     drone.counter_clockwise(speed)
                     pygame.time.wait(duration)
                     drone.counter_clockwise(0)
-            elif command_str == "b'cw'":
-                if tello_connected:
+        elif command_str == "b'cw'":
+            if tello_connected:
                     drone.clockwise(speed)
                     pygame.time.wait(duration)
                     drone.clockwise(0)
-            elif command_str == "b'ccw'":
-                if tello_connected:
+        elif command_str == "b'ccw'":
+            if tello_connected:
                     drone.counter_clockwise(speed)
                     pygame.time.wait(duration)
                     drone.counter_clockwise(0)
-            elif command_str == "b'up'":
-                if tello_connected:
+        elif command_str == "b'up'":
+            if tello_connected:
                     drone.up(speed)
                     pygame.time.wait(duration)
                     drone.up(0)
-            elif command_str == "b'down'":
-                if tello_connected:
+        elif command_str == "b'down'":
+            if tello_connected:
                     drone.down(speed)
                     pygame.time.wait(duration)
                     drone.down(0)
-            else:
-                event_log_update('Wrong comment')
+        else:
+            command_str = 'Wrong comment'
+
+        mqtt_command_img = font.render(command_str, False, whiteColor)
+        window.blit(mqtt_command_img, (50, 100))
+        event_log_update(command_str)
 
 def pygame_update(message_lane):
     global message_list, window, message_img, background_img, battary
@@ -253,15 +250,20 @@ def pygame_update(message_lane):
         else:
             message_img = font.render("", False, whiteColor)
             window.blit(message_img, (50, 270 + i * 30))
-    draw_gauge_bar(49, 309, 0, 4*battary, 10, redColor)
-    draw_gauge_bar(49, 550, 0, 8*set_time, 20, blueColor)
+    draw_gauge_bar(54, 309, 0, 4.5*battary, 10, redColor)
+    if takeoff_flag == True:
+        if set_time > 60:
+            draw_gauge_bar(54, 550, 0, 7.5 * 60, 20, blueColor)
+        else:
+            draw_gauge_bar(54, 550, 0, 8*set_time, 20, blueColor)
     set_time_str = '{:.1f}'.format(set_time)
     font = pygame.font.Font("bgothl.ttf", 30)
     if takeoff_flag == True:
-        time_img = font.render("Remain time : "+set_time_str, False, blueColor)
-        window.blit(time_img, (80, 500))
+        if game_mode == True:
+            time_img = font.render("Remain time : "+set_time_str, False, blueColor)
+            window.blit(time_img, (80, 500))
     if takeoff_flag == False:
-        time_img = font.render("Total flight : "+str(fly_time)+" sec", False, blueColor)
+        time_img = font.render("Total flight : "+str('%.1f'%fly_time)+" sec", False, blueColor)
         window.blit(time_img, (80, 500))
     font = pygame.font.Font("bgothl.ttf", 20)
     pygame.display.update()
@@ -289,6 +291,7 @@ def main():
     global window, background_img, font, control_mode, fpsClock
     global blackColor, blueColor, whiteColor, greenColor
     global speed, duration, rot_flag, battary, takeoff_flag, msg
+    global takeoff_time, land_time, fly_time, set_time
 
     init_pygame()
     if tello_connected:
@@ -298,7 +301,8 @@ def main():
     quit = False
     while quit is False:
         if takeoff_flag == True:
-            set_time = set_time - 0.1
+            if game_mode == True:  
+                set_time = set_time - 0.1
             if set_time <= 0:
                 msg = "land"
                 takeoff_flag = True
@@ -329,22 +333,20 @@ def main():
                     takeoff_flag = True
                     set_time = 30
                     #background_img = pygame.image.load(bg_file_1)
+                    #event_log_update(msg)
+                    if tello_connected:
+                        drone.takeoff()
                     event_log_update(msg)
-                    if control_mode:
-                        if tello_connected:
-                            drone.takeoff()
-                        background_img = pygame.image.load(bg_file_1)
                 elif event.key == K_l:
                     msg = 'land'
                     background_img = pygame.image.load(bg_file_1)
-                    land_time = pygame.time.get_ticks()
+                    if takeoff_flag == True:
+                        land_time = pygame.time.get_ticks()
                     fly_time = (land_time - takeoff_time) / 1000.0
-                    takeoff_flag = False
-                    event_log_update(msg)
                     if tello_connected:
                         drone.land()
-                    background_img = pygame.image.load(bg_file_1)
                     takeoff_flag = False
+                    event_log_update(msg)
                 elif event.key == K_LEFT:
                     msg = 'left'
                     event_log_update(msg)
@@ -352,55 +354,63 @@ def main():
                         drone.left(speed)
                         pygame.time.wait(duration)
                         drone.left(0)
+                    event_log_update(msg)
                 elif event.key == K_RIGHT:
                     msg = 'right'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.right(speed)
                         pygame.time.wait(duration)
                         drone.right(0)
+                    event_log_update(msg)
                 elif event.key == K_UP:
                     msg = 'forward'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.forward(speed)
                         pygame.time.wait(duration)
                         drone.forward(0)
+                    event_log_update(msg)
                 elif event.key == K_DOWN:
                     msg = 'back'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.backward(speed)
                         pygame.time.wait(duration)
                         drone.backward(0)
+                    event_log_update(msg)
                 elif event.key == K_HOME:
                     msg = 'ccw'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.counter_clockwise(speed)
                         pygame.time.wait(duration)
                         drone.counter_clockwise(0)
+                    event_log_update(msg)
                 elif event.key == K_END:
                     msg = 'cw'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.clockwise(speed)
                         pygame.time.wait(duration)
                         drone.clockwise(0)
+                    event_log_update(msg)
                 elif event.key == K_PAGEUP:
                     msg = 'up'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.up(speed)
                         pygame.time.wait(duration)
                         drone.up(0)
+                    event_log_update(msg)
                 elif event.key == K_PAGEDOWN:
                     msg = 'down'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         drone.down(speed)
                         pygame.time.wait(duration)
                         drone.down(0)
+                    event_log_update(msg)
                 elif event.key == K_r:
                     if rot_flag:
                         msg = 'Rotation stop'
@@ -415,13 +425,17 @@ def main():
                     event_log_update(msg)
                 elif event.key == K_f:
                     msg = 'Flip forward'
-                    event_log_update(msg)
+                    #event_log_update(msg)
                     if tello_connected:
                         if battary > 50:
                             drone.flip_forward()
                         else:
                             # print('Low battary to flip < 50%')
                             event_log_update('Low battary to flip < 50%')
+                    event_log_update(msg)
+                else:
+                    msg = 'Wrong Command'  
+                    event_log_update(msg)
         pygame.display.update()
         # fpsClock.tick(25)
     if tello_connected:
