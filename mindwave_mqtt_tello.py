@@ -97,7 +97,7 @@ def setup():
     if fullscreen is True:
         window = pygame.display.set_mode((1360, 768), pygame.FULLSCREEN)
     else:
-        window = pygame.display.set_mode((1360, 740), pygame.RESIZABLE)
+        window = pygame.display.set_mode((1360, 768), pygame.RESIZABLE)
     background_img = pygame.image.load(bg_file)
     pygame_update(m_event)
 
