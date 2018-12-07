@@ -48,9 +48,9 @@ duration_level3 = 79
 # Set pygame parameter
 fullscreen = False
 os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (0,0)
-bg_file = "Drone_1360x968_start.jpg"
-bg_file_close = "Drone_1360x968_start.jpg"
-bg_file_open = "Drone_1360x968_open.jpg"
+bg_file = "Drone_1360x768_start.jpg"
+bg_file_close = "Drone_1360x768_start.jpg"
+bg_file_open = "Drone_1360x768_open.jpg"
 message_range = 20
 message_list = list(range(message_range))
 m_event = 0
@@ -97,7 +97,7 @@ def setup():
     if fullscreen is True:
         window = pygame.display.set_mode((1360, 768), pygame.FULLSCREEN)
     else:
-        window = pygame.display.set_mode((1360, 768), pygame.RESIZABLE)
+        window = pygame.display.set_mode((1360, 740), pygame.RESIZABLE)
     background_img = pygame.image.load(bg_file)
     pygame_update(m_event)
 
@@ -130,7 +130,7 @@ def pygame_update(message_lane):
     font = pygame.font.Font("bgothl.ttf", 30)
     if takeoff_flag is True:
         attention_value_img = font.render(str(attention_value), False, whiteColor)
-        attention_txt_img = font.render("Attantion", False, whiteColor)
+        attention_txt_img = font.render("Attention", False, whiteColor)
         duration_value_img = font.render(str(attention_duration), False, whiteColor)
         duration_txt_img = font.render("Charging", False, whiteColor)
         window.blit(attention_txt_img, (280, 700))
@@ -143,7 +143,7 @@ def pygame_update(message_lane):
         draw_gauge_needle(1005, 582, angle_duration, 160, 6)
     else:
         attention_value_img = font.render(str(attention_value), False, blackColor)
-        attention_txt_img = font.render("Attantion", False, blackColor)
+        attention_txt_img = font.render("Attention", False, blackColor)
         duration_value_img = font.render(str(attention_duration), False, blackColor)
         duration_txt_img = font.render("Charging", False, blackColor)
         window.blit(attention_txt_img, (280, 600))

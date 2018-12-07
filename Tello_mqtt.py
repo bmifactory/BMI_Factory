@@ -21,7 +21,7 @@ control_mode = True
 video_stream = True
 prev_flight_data = None
 video_player = None
-battary = 10
+battary = 0
 altitude = 0
 speed = 50
 duration = 500
@@ -64,6 +64,7 @@ def init_pygame():
     whiteColor = pygame.Color(255, 255, 255)
     greenColor = pygame.Color(0, 255, 0)
     window = pygame.display.set_mode((560, 575), pygame.RESIZABLE)
+    #window = pygame.display.set_mode((240, 575), pygame.RESIZABLE)
     background_img = pygame.image.load(bg_file_1)
     pygame_update(event_log)
     # fpsClock = pygame.time.Clock()
@@ -109,6 +110,7 @@ def tello_handler(event, sender, data, **args):
     elif event is drone.EVENT_VIDEO_FRAME:
         if video_player is None:
             video_player = Popen(['mplayer', '-xy', '560', '-geometry', '1360:660', '-fps', '35', '-'], stdin=PIPE)
+            #video_player = Popen(['mplayer', '-xy', '240', '-geometry', '1360:640', '-fps', '35', '-'], stdin=PIPE)
         try:
             video_player.stdin.write(data)
         except IOError as err:
@@ -238,7 +240,12 @@ def pygame_update(message_lane):
         else:
             message_img = font.render("", False, whiteColor)
             window.blit(message_img, (50, 270 + i * 30))
-    draw_gauge_bar(49, 309, 0, 4*battary, 10)
+    #draw_gauge_bar(49, 309, 0, 4*battary, 10)
+    draw_gauge_bar(30, 309, 0, 2*battary, 18)
+    battary_str = '{:.1f}'.format(battary)
+    font = pygame.font.Font("bgothl.ttf", 30)
+    battary_img = font.render(battary_str+"%", False, blueColor)
+    window.blit(battary_img, (30, 260))
     pygame.display.update()
 
 def draw_gauge_bar(center_x, center_y, dir, length, width):
@@ -290,10 +297,10 @@ def main():
                     if control_mode:
                         if tello_connected:
                             drone.takeoff()
-                        background_img = pygame.image.load(bg_file_1)
+                        #background_img = pygame.image.load(bg_file_2)
                 elif event.key == K_l:
                     msg = 'land'
-                    background_img = pygame.image.load(bg_file_1)
+                    #background_img = pygame.image.load(bg_file_1)
                     event_log_update(msg)
                     if tello_connected:
                         drone.land()

@@ -130,7 +130,7 @@ def pygame_update(message_lane):
     font = pygame.font.Font("bgothl.ttf", 30)
     if takeoff_flag is True:
         attention_value_img = font.render(str(attention_value), False, whiteColor)
-        attention_txt_img = font.render("Attantion", False, whiteColor)
+        attention_txt_img = font.render("Attention", False, whiteColor)
         duration_value_img = font.render(str(attention_duration), False, whiteColor)
         duration_txt_img = font.render("Charging", False, whiteColor)
         window.blit(attention_txt_img, (280, 700))
@@ -143,7 +143,7 @@ def pygame_update(message_lane):
         draw_gauge_needle(1005, 582, angle_duration, 160, 6)
     else:
         attention_value_img = font.render(str(attention_value), False, blackColor)
-        attention_txt_img = font.render("Attantion", False, blackColor)
+        attention_txt_img = font.render("Attention", False, blackColor)
         duration_value_img = font.render(str(attention_duration), False, blackColor)
         duration_txt_img = font.render("Charging", False, blackColor)
         window.blit(attention_txt_img, (280, 600))
