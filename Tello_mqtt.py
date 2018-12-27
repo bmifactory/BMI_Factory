@@ -240,8 +240,8 @@ def pygame_update(message_lane):
         else:
             message_img = font.render("", False, whiteColor)
             window.blit(message_img, (50, 270 + i * 30))
-    #draw_gauge_bar(49, 309, 0, 4*battary, 10)
-    draw_gauge_bar(30, 309, 0, 2*battary, 18)
+    draw_gauge_bar(49, 309, 0, 4*battary, 10)
+    #draw_gauge_bar(30, 309, 0, 2*battary, 18)
     battary_str = '{:.1f}'.format(battary)
     font = pygame.font.Font("bgothl.ttf", 30)
     battary_img = font.render(battary_str+"%", False, blueColor)

@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="">
+    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x968_close.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x968_open.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x968_start.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ironboy_1360x968_open.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ironboy_1360x968_start.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mindwave_1360x968_mode0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mindwave_1360x968_mode1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mindwave_1360x968_mode2-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mindwave_1360x968_mode2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tello_mqtt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tello_mqtt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave_mqtt_Ironboy.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_mqtt_Ironboy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave_mqtt_tello.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_mqtt_tello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,17 +15,17 @@
     <session id="-1747921703">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="5" />
-          <entry key="project.open.time.3" value="7" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.3" value="8" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="237" />
+          <entry key="py" value="242" />
           <entry key="sh" value="18" />
           <entry key="txt" value="44" />
         </counts>
@@ -45,23 +33,23 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="62" />
-          <entry key="Python" value="237" />
+          <entry key="Python" value="242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ino" value="2" />
           <entry key="jpg" value="2" />
-          <entry key="py" value="19" />
-          <entry key="sh" value="11" />
-          <entry key="txt" value="7" />
+          <entry key="py" value="22" />
+          <entry key="sh" value="13" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="2" />
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="19" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -72,12 +60,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindwave_mqtt_tello.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="208" column="16" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Headset address.txt">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="134" column="60" selection-start-line="134" selection-start-column="60" selection-end-line="134" selection-end-column="60" />
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -85,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-871">
-              <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+            <state relative-caret-position="596">
+              <caret line="262" column="37" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -94,31 +91,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tello_mqtt_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="629">
               <caret line="260" column="28" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mindwave_mqtt_Ironboy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="109" column="8" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>atte</find>
+      <find>attan</find>
+      <find>atta</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,15 +126,15 @@
         <option value="$PROJECT_DIR$/Mindwave_mqtt_ironboy.sh" />
         <option value="$PROJECT_DIR$/Mindwave_mqtt_tello.sh" />
         <option value="$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py" />
-        <option value="$PROJECT_DIR$/mindwave_mqtt_tello.py" />
         <option value="$PROJECT_DIR$/mindwave_mqtt_Ironboy.py" />
+        <option value="$PROJECT_DIR$/mindwave_mqtt_tello.py" />
         <option value="$PROJECT_DIR$/Tello_mqtt.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="width" value="2298" />
+    <option name="x" value="-10" />
+    <option name="width" value="2968" />
     <option name="height" value="1698" />
   </component>
   <component name="ProjectView">
@@ -156,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -187,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mindwave_mqtt_tello">
+  <component name="RunManager" selected="Python.Tello_mqtt">
     <configuration name="Mindwave_mqtt_Ironboy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,8 +288,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mindwave_mqtt_tello" />
         <item itemvalue="Python.Tello_mqtt" />
+        <item itemvalue="Python.mindwave_mqtt_tello" />
         <item itemvalue="Python.mindwave_viewer_mqtt_v7" />
         <item itemvalue="Python.Tello_mqtt_game" />
         <item itemvalue="Python.Mindwave_mqtt_Ironboy" />
@@ -398,19 +384,33 @@
       <option name="project" value="LOCAL" />
       <updated>1543170184265</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="modified">
+      <created>1544189372832</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544189372832</updated>
+    </task>
+    <task id="LOCAL-00013" summary="modified">
+      <created>1544189536602</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544189536602</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1149" height="849" extended-state="0" />
+    <frame x="-5" y="0" width="1484" height="849" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32973945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25345305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8722826" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8716876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -495,6 +495,14 @@
     <entry file="file://$PROJECT_DIR$/Tello_bg_1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_mqtt_ironboy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mindwave_1360x968_mode0.jpg" />
     <entry file="file://$PROJECT_DIR$/mindwave_v7.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -502,17 +510,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mindwave_mqtt_tello.sh">
+    <entry file="file://$PROJECT_DIR$/mindwave_mqtt_tello.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mindwave_mqtt_ironboy.sh">
+    <entry file="file://$PROJECT_DIR$/mindwave_mqtt_Ironboy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="629">
+          <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="109" column="7" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -523,40 +538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mindwave_1360x968_mode0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py">
+    <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="8" />
+        <state relative-caret-position="596">
+          <caret line="262" column="37" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mindwave_mqtt_tello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="134" column="60" selection-start-line="134" selection-start-column="60" selection-end-line="134" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindwave_mqtt_Ironboy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-871">
-          <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+        <state relative-caret-position="211">
+          <caret line="208" column="16" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tello_mqtt_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="629">
           <caret line="260" column="28" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
         </state>
       </provider>
