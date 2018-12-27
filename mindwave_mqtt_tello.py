@@ -165,24 +165,6 @@ def pygame_update(message_lane):
     pygame.display.update()
 
 def draw_gauge_needle(center_x, center_y, ang, length, width):
-    '''
-    a = (2 * 0 - 42) * 0.01745329252
-    end_x = center_x + length * sin(a)
-    end_y = center_y - length * cos(a)
-    pygame.draw.line(window, blueColor, (center_x, center_y), (end_x, end_y), 2)
-    a = (2 * 21 - 42) * 0.01745329252
-    end_x = center_x + length * sin(a)
-    end_y = center_y - length * cos(a)
-    pygame.draw.line(window, blueColor, (center_x, center_y), (end_x, end_y), 2)
-    a = (2 * 66 - 42) * 0.01745329252
-    end_x = center_x + length * sin(a)
-    end_y = center_y - length * cos(a)
-    pygame.draw.line(window, blueColor, (center_x, center_y), (end_x, end_y), 2)
-    a = (2 * 84 - 42) * 0.01745329252
-    end_x = center_x + length * sin(a)
-    end_y = center_y - length * cos(a)
-    pygame.draw.line(window, blueColor, (center_x, center_y), (end_x, end_y), 2)
-    '''
     end_x = center_x + length * sin(ang)
     end_y = center_y - length * cos(ang)
     pygame.draw.line(window, redColor, (center_x, center_y), (end_x, end_y), width)
