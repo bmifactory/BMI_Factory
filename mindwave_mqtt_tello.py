@@ -122,12 +122,12 @@ def pygame_update(message_lane):
 
     if int(attention_value) > 100:
         attention_value = 100
-        pygame.draw.circle(window, attentionColor, (680, 395), 100, 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), 100, 1)
     elif int(gain*attention_value) < 8:
         # attention_value = 0
-        pygame.draw.circle(window, attentionColor, (680, 395), 8, 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), 8, 1)
     else:
-        pygame.draw.circle(window, attentionColor, (680, 395), int(attention_value), 2)
+        pygame.draw.circle(window, attentionColor, (680, 395), int(attention_value), 1)
 
     font = pygame.font.Font("bgothl.ttf", 30)
     if takeoff_flag is True:
