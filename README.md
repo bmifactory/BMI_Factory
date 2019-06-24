@@ -1,5 +1,6 @@
 # BMI_Factory
-KBRI BMI Factory
+
+Run commands :
 
 python3 mindwave_mqtt_tello.py [Headset mac address]
 
