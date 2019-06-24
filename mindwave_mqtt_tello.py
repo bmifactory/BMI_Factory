@@ -49,9 +49,10 @@ duration_level3 = 79
 # Set pygame parameter
 fullscreen = False
 os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (0,0)
-bg_file = "Drone_1360x768_start.jpg"
-bg_file_close = "Drone_1360x768_start.jpg"
-bg_file_open = "Drone_1360x768_open.jpg"
+bg_file = "images/Drone_1360x768_start.jpg"
+bg_file_close = "images/Drone_1360x768_start.jpg"
+bg_file_open = "images/Drone_1360x768_open.jpg"
+txt_font = "font/bgothl.ttf"
 message_max = 20
 message_list = list(range(message_max))
 event_log = 0
@@ -107,7 +108,7 @@ def pygame_update(message_lane):
     global message_list, window, message_img, background_img
     global attention_duration, attention_value, control_mode
     global takeoff_flag
-    font = pygame.font.Font("bgothl.ttf", 20)
+    font = pygame.font.Font(txt_font, 20)
     window.blit(background_img, (0, 0))
     for i in list(range(message_max)):
         if i < message_lane - 1:
@@ -129,7 +130,7 @@ def pygame_update(message_lane):
     else:
         pygame.draw.circle(window, attentionColor, (680, 395), int(attention_value), 1)
 
-    font = pygame.font.Font("bgothl.ttf", 30)
+    font = pygame.font.Font(txt_font, 30)
     if takeoff_flag is True:
         attention_value_img = font.render(str(attention_value), False, whiteColor)
         attention_txt_img = font.render("Attention", False, whiteColor)

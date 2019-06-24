@@ -36,8 +36,9 @@ roll = 0.0
 # Set pygame parameter
 fullscreen = False
 os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (1360,0)
-bg_file_1="Tello_bg_1.jpg"
-bg_file_2="Tello_bg_2.jpg"
+bg_file_1="images/Tello_bg_1.jpg"
+bg_file_2="images/Tello_bg_2.jpg"
+txt_font = "font/bgothl.ttf"
 message_max = 10
 message_list = list(range(message_max))
 event_log = 0
@@ -57,7 +58,7 @@ def init_pygame():
     global window, background_img, font, fpsClock
     global blackColor, blueColor, whiteColor, greenColor, redColor
     pygame.init()
-    font = pygame.font.Font("bgothl.ttf", 20)
+    font = pygame.font.Font(txt_font, 20)
     blackColor = pygame.Color(0, 0, 0)
     redColor = pygame.Color(255, 0, 0)
     blueColor = pygame.Color(0, 0, 255)
@@ -227,7 +228,7 @@ def on_message(client, userdata, msg):
 def pygame_update(message_lane):
     global message_list, window, message_img, background_img, battary
     global attention_duration, attention_value, control_mode, takeoff_flag
-    font = pygame.font.Font("bgothl.ttf", 20)
+    font = pygame.font.Font(txt_font, 20)
     # font = pygame.font.Font("freesansbold.ttf", 20)
     window.blit(background_img, (0, 0))
     for i in list(range(message_max)):
@@ -243,7 +244,7 @@ def pygame_update(message_lane):
     draw_gauge_bar(49, 309, 0, 4*battary, 10)
     #draw_gauge_bar(30, 309, 0, 2*battary, 18)
     battary_str = '{:.1f}'.format(battary)
-    font = pygame.font.Font("bgothl.ttf", 30)
+    font = pygame.font.Font(txt_font, 30)
     battary_img = font.render(battary_str+"%", False, blueColor)
     window.blit(battary_img, (30, 260))
     pygame.display.update()
