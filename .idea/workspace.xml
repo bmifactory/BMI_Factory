@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x768_close.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x768_open.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drone_1360x768_start.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headset address.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tello_bg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tello_bg_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bgothl.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindwave_mqtt_tello.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindwave_mqtt_tello.py" afterDir="false" />
-    </list>
+    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +24,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="485" />
+          <entry key="py" value="525" />
           <entry key="sh" value="56" />
           <entry key="txt" value="44" />
         </counts>
@@ -43,7 +32,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="100" />
-          <entry key="Python" value="485" />
+          <entry key="Python" value="525" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,7 +40,7 @@
           <entry key="ino" value="2" />
           <entry key="jpg" value="8" />
           <entry key="md" value="1" />
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
           <entry key="sh" value="24" />
           <entry key="txt" value="8" />
         </counts>
@@ -61,7 +50,7 @@
           <entry key="Image" value="8" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="34" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -74,11 +63,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindwave_mqtt_tello.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="1767">
+              <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -117,13 +115,13 @@
         <option value="$PROJECT_DIR$/Mindwave_mqtt_tello.sh" />
         <option value="$PROJECT_DIR$/mindwave_viewer_mqtt_v7.py" />
         <option value="$PROJECT_DIR$/mindwave_mqtt_Ironboy.py" />
-        <option value="$PROJECT_DIR$/Tello_mqtt.py" />
         <option value="$PROJECT_DIR$/tello_mqtt.sh" />
         <option value="$PROJECT_DIR$/tello_mqtt_game.sh" />
         <option value="$PROJECT_DIR$/mindwave_mqtt_tello.sh" />
         <option value="$PROJECT_DIR$/Tello_mqtt.sh" />
         <option value="$PROJECT_DIR$/Tello_mqtt_game.sh" />
         <option value="$PROJECT_DIR$/mindwave_mqtt_tello.py" />
+        <option value="$PROJECT_DIR$/Tello_mqtt.py" />
       </list>
     </option>
   </component>
@@ -480,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561344989290</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="modified">
+      <created>1561350301401</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1561350301401</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -610,16 +615,6 @@
     <entry file="file://$PROJECT_DIR$/Drone_1360x768_start.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="111" column="81" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
-          <folding>
-            <element signature="e#4127#8054#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Headset address.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -665,8 +660,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mindwave_mqtt_tello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="1767">
+          <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tello_mqtt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
