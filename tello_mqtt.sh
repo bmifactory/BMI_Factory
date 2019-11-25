@@ -1,3 +1,3 @@
 #!/bin/sh
-cd /home/kbri/BMI_Factory-Dev-2019-06
+cd /home/kbri/bmifactory
 python3 tello_mqtt.py

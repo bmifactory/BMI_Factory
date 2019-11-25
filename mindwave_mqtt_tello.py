@@ -15,8 +15,8 @@ Modified on 2019. 06. 24
 import pygame, random, sys, numpy, os
 from numpy import *
 from pygame import *
-from mindwave3.parser import ThinkGearParser, TimeSeriesRecorder
-from startup_sub import *
+from parser import ThinkGearParser, TimeSeriesRecorder
+from startup_mindwave import *
 #from tello import *
 import paho.mqtt.client as mqtt
 

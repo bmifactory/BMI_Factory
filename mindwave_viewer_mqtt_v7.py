@@ -3,17 +3,16 @@ Created on 2018. 10. 24.
 @author: Kipom Kim
 '''
 # -*- coding: utf-8 -*-
-import pygame, sys, numpy, os
+import pygame, sys, numpy, os, scipy, time
 from numpy import *
 from pygame import *
-import scipy, time
-from mindwave3.pyeeg import bin_power, spectral_entropy, hjorth
+from pyeeg import bin_power, spectral_entropy, hjorth
 from numpy.random import randn
-from mindwave3.parser import ThinkGearParser, TimeSeriesRecorder
-from mindwave3.bluetooth_headset import connect_magic, connect_bluetooth_addr
-from mindwave3.bluetooth_headset import BluetoothError
-from startup_sub import mindwave_startup
-from startup_sub import *
+from parser import ThinkGearParser, TimeSeriesRecorder
+from bluetooth_headset import connect_magic, connect_bluetooth_addr
+from bluetooth_headset import BluetoothError
+from startup_mindwave import mindwave_startup
+from startup_mindwave import *
 
 import paho.mqtt.client as mqtt
 
@@ -100,10 +99,10 @@ def main():
     pygame.display.set_caption("Mindwave Viewer")
 
     #Set pygame parameter
-    background_img_0 = pygame.image.load("Mindwave_1360x768_mode0.jpg")
-    background_img_1 = pygame.image.load("Mindwave_1360x768_mode1.jpg")
-    background_img_2 = pygame.image.load("Mindwave_1360x768_mode2.jpg")
-    background_img_3 = pygame.image.load("Mindwave_1360x768_mode2.jpg")
+    background_img_0 = pygame.image.load("images/Drone_1360x768_open.jpg")
+    background_img_1 = pygame.image.load("images/Drone_1360x768_open.jpg")
+    background_img_2 = pygame.image.load("images/Drone_1360x768_open.jpg")
+    background_img_3 = pygame.image.load("images/Drone_1360x768_open.jpg")
     font = pygame.font.Font("freesansbold.ttf", 20)
     font_title = pygame.font.Font("freesansbold.ttf", 30)
     #meditation_txt_img = font.render("Meditation", False, whiteColor)
