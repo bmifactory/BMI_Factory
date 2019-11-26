@@ -20,7 +20,7 @@ class Tello:
         self.tello_adderss = (self.tello_ip, self.tello_port)
         self.log = []
 
-        self.MAX_TIME_OUT = 15.0
+        self.MAX_TIME_OUT = 10.0
 
     def send_command(self, command):
         """
@@ -46,7 +46,7 @@ class Tello:
                 # TODO: is timeout considered failure or next command still get executed
                 # now, next one got executed
                 return
-        print('Done!!! sent command: %s to %s'%(command, self.tello_ip))
+        #print('Done!!! sent command: %s to %s'%(command, self.tello_ip))
 
     def _receive_thread(self):
         """Listen to responses from the Tello.
