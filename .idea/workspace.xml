@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="" />
+    <list default="true" id="9a0051af-9559-4bcb-bee7-8d283837c053" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tello_mqtt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tello_mqtt.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tello_mqtt">
-    <configuration name="Mindwave_mqtt_Ironboy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BMI_Factory" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mindwave_mqtt_Ironboy.py" />
-      <option name="PARAMETERS" value="98:07:2D:7F:DD:86" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.mindwave_mqtt_tello">
     <configuration name="Tello_mqtt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BMI_Factory" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,20 +139,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tello_mqtt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BMI_Factory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tello_mqtt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Mindwave_mqtt_Ironboy" />
       <item itemvalue="Python.mindwave_mqtt_tello" />
       <item itemvalue="Python.Tello_mqtt" />
       <item itemvalue="Python.Tello_mqtt_game" />
       <item itemvalue="Python.mindwave_viewer_mqtt_v7" />
+      <item itemvalue="Python.tello_mqtt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Tello_mqtt" />
         <item itemvalue="Python.mindwave_mqtt_tello" />
+        <item itemvalue="Python.tello_mqtt" />
+        <item itemvalue="Python.Tello_mqtt" />
         <item itemvalue="Python.mindwave_viewer_mqtt_v7" />
         <item itemvalue="Python.Tello_mqtt_game" />
-        <item itemvalue="Python.Mindwave_mqtt_Ironboy" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574689577268</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Upload new files">
+      <created>1574689746135</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574689746135</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,6 +420,7 @@
     <MESSAGE value="upload" />
     <MESSAGE value="modified" />
     <MESSAGE value="New Dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Dev" />
+    <MESSAGE value="Upload new files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload new files" />
   </component>
 </project>
