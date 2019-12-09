@@ -112,83 +112,51 @@ def on_message(client, userdata, msg):
         event_log_update(command_str)
         if tello_connected:
             if command_str == "takeoff":
-                pygame.time.wait(2000)
-                #drone.send_command("takeoff")
-                drone.send_command('battery?')
+                #pygame.time.wait(2000)
+                drone.send_command("takeoff")
+                drone.send_command("battery?")
                 battery = int(str(drone.response).split("'")[1].split("\\")[0])
             elif command_str == "level1":
                 if dir_flag == 0:
-                    #drone.counter_clockwise(speed)
-                    pygame.time.wait(2000)
-                    #drone.counter_clockwise(0)
+                    drone.send_command("cw 90")
                     dir_flag = 1
                 elif dir_flag == 1:
-                    #drone.clockwise(speed)
-                    pygame.time.wait(2000)
-                    #drone.clockwise(0)
+                    drone.send_command("ccw 90")
                     dir_flag = 0
             elif command_str == "level2":
+                drone.send_command("battery?")
+                battery = int(str(drone.response).split("'")[1].split("\\")[0])
                 if battery > 50:
-                    pygame.time.wait(2000)
-                    #drone.flip_forward()
+                    drone.send_command("flip f")
+                    drone.send_command("back 30")
                 else:
-                    if dir_flag == 0:
-                        #drone.counter_clockwise(speed)
-                        pygame.time.wait(2000)
-                        #drone.counter_clockwise(0)
-                        dir_flag = 1
-                    elif dir_flag == 1:
-                        #drone.clockwise(speed)
-                        pygame.time.wait(2000)
-                        #drone.clockwise(0)
-                        dir_flag = 0
+                    if updown_flag == 0:
+                        drone.send_command("up 30")
+                        updown_flag = 1
+                    elif updown_flag == 1:
+                        drone.send_command("down 30")
+                        updown_flag = 0
             elif command_str == "land":
-                pygame.time.wait(duration)
-                #drone.send_command("land")
+                drone.send_command("land")
             elif command_str == "left":
-                if tello_connected:
-                    #drone.left(speed)
-                    pygame.time.wait(duration)
-                    #drone.left(0)
+                drone.send_command("left 30")
             elif command_str == "right":
-                if tello_connected:
-                    #drone.right(speed)
-                    pygame.time.wait(duration)
-                    #drone.right(0)
+                drone.send_command("right 30")
             elif command_str == "forward":
-                if tello_connected:
-                    #drone.forward(speed)
-                    pygame.time.wait(duration)
-                    #drone.forward(0)
+                drone.send_command("forward 30")
             elif command_str == "back":
-                if tello_connected:
-                    #drone.backward(speed)
-                    pygame.time.wait(duration)
-                    #drone.backward(0)
+                drone.send_command("back 30")
             elif command_str == "cw":
-                if tello_connected:
-                    #drone.clockwise(speed)
-                    pygame.time.wait(duration)
-                    #drone.clockwise(0)
+                drone.send_command("cw 45")
             elif command_str == "ccw":
-                if tello_connected:
-                    #drone.counter_clockwise(speed)
-                    pygame.time.wait(duration)
-                    #drone.counter_clockwise(0)
+                drone.send_command("ccw 45")
             elif command_str == "up":
-                if tello_connected:
-                    #drone.up(speed)
-                    pygame.time.wait(duration)
-                    #drone.up(0)
+                drone.send_command("up 30")
             elif command_str == "down":
-                if tello_connected:
-                    #drone.down(speed)
-                    pygame.time.wait(duration)
-                    #drone.down(0)
+                drone.send_command("down 30")
             elif command_str == "Neurosky connected":
-                if tello_connected:
-                    drone.send_command('battery?')
-                    battery = int(str(drone.response).split("'")[1].split("\\")[0])
+                drone.send_command('battery?')
+                battery = int(str(drone.response).split("'")[1].split("\\")[0])
             else:
                 event_log_update('Wrong comment')
 
@@ -263,16 +231,15 @@ def main():
                     event_log_update(msg)
                     if control_mode:
                         if tello_connected:
-                            #drone.send_command("takeoff")
-                            drone.send_command('battery?')
+                            drone.send_command("takeoff")
+                            drone.send_command("battery?")
                             battery = int(str(drone.response).split("'")[1].split("\\")[0])
                         #background_img = pygame.image.load(bg_file_2)
                 elif event.key == K_l:
                     msg = 'land'
                     if tello_connected:
-                        pygame.time.wait(duration)
-                        #drone.send_command("land")
-                        drone.send_command('battery?')
+                        drone.send_command("land")
+                        drone.send_command("battery?")
                         battery = int(str(drone.response).split("'")[1].split("\\")[0])
                     background_img = pygame.image.load(bg_file_1)
                     takeoff_flag = False
@@ -281,81 +248,52 @@ def main():
                     msg = 'left'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.left(speed)
-                        pygame.time.wait(duration)
-                        #drone.left(0)
+                        drone.send_command("left 30")
                 elif event.key == K_RIGHT:
                     msg = 'right'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.right(speed)
-                        pygame.time.wait(duration)
-                        #drone.right(0)
+                        drone.send_command("right 30")
                 elif event.key == K_UP:
                     msg = 'forward'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.forward(speed)
-                        pygame.time.wait(duration)
-                        #drone.forward(0)
+                        drone.send_command("forward 30")
                 elif event.key == K_DOWN:
                     msg = 'back'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.backward(speed)
-                        pygame.time.wait(duration)
-                        #drone.backward(0)
+                        drone.send_command("back 30")
                 elif event.key == K_HOME:
                     msg = 'ccw'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.counter_clockwise(speed)
-                        pygame.time.wait(duration)
-                        #drone.counter_clockwise(0)
+                        drone.send_command("ccw 45")
                 elif event.key == K_END:
                     msg = 'cw'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.clockwise(speed)
-                        pygame.time.wait(duration)
-                        #drone.clockwise(0)
+                        drone.send_command("cw 45")
                 elif event.key == K_PAGEUP:
                     msg = 'up'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.up(speed)
-                        pygame.time.wait(duration)
-                        #drone.up(0)
+                        drone.send_command("up 30")
                 elif event.key == K_PAGEDOWN:
                     msg = 'down'
                     event_log_update(msg)
                     if tello_connected:
-                        #drone.down(speed)
-                        pygame.time.wait(duration)
-                        #drone.down(0)
-                elif event.key == K_r:
-                    if rot_flag:
-                        msg = 'Rotation stop'
-                        if tello_connected:
-                            #drone.clockwise(0)
-                            pygame.time.wait(duration)
-                        rot_flag = False
-                    else:
-                        msg = 'Rotation start'
-                        if tello_connected:
-                            #drone.clockwise(50)
-                            pygame.time.wait(duration)
-                        rot_flag = True
-                    event_log_update(msg)
+                        drone.send_command("down 30")
                 elif event.key == K_f:
                     msg = 'Flip forward'
                     event_log_update(msg)
                     if tello_connected:
+                        drone.send_command("battery?")
+                        battery = int(str(drone.response).split("'")[1].split("\\")[0])
                         if battery > 50:
-                            #drone.flip_forward()
-                            pygame.time.wait(duration)
+                            drone.send_command("flip f")
+                            drone.send_command("back 30")
                         else:
-                            # print('Low battery to flip < 50%')
                             event_log_update('Low battery to flip < 50%')
         pygame.display.update()
         # fpsClock.tick(25)
