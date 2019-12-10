@@ -1,0 +1,90 @@
+------
+Drone: 1
+
+id: 0
+command: command
+response: b"\xcc\x18\x01\xb9\x88V\x00U\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'\x00\x00\xbf\x0e\x00\x06\x00\x00\x00\x00\x00\xa5\xec"
+start time: 2019-12-11 01:12:01.955547
+end_time: 2019-12-11 01:12:02.094400
+duration: 0.138853
+
+id: 1
+command: battery?
+response: b'38\r\n'
+start time: 2019-12-11 01:12:07.115746
+end_time: 2019-12-11 01:12:07.220355
+duration: 0.104609
+
+id: 2
+command: sn?
+response: b'0TQDG2KEDB94U4'
+start time: 2019-12-11 01:12:08.157472
+end_time: 2019-12-11 01:12:08.295374
+duration: 0.137902
+
+id: 3
+command: mon
+response: b'ok'
+start time: 2019-12-11 01:12:09.234201
+end_time: 2019-12-11 01:12:09.259552
+duration: 0.025351
+
+id: 4
+command: takeoff
+response: b'ok'
+start time: 2019-12-11 01:12:09.259734
+end_time: 2019-12-11 01:12:13.623943
+duration: 4.364209
+
+id: 5
+command: land
+response: b'ok'
+start time: 2019-12-11 01:12:13.659953
+end_time: 2019-12-11 01:12:17.302401
+duration: 3.642448
+
+------
+Drone: 2
+
+id: 0
+command: command
+response: b'\xcc\x18\x01\xb9\x88V\x00\x86\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00K\x00\x00\xbc\x0f\x00\x06\x00\x00\x00\x00\x00]c'
+start time: 2019-12-11 01:12:01.955562
+end_time: 2019-12-11 01:12:02.109531
+duration: 0.153969
+
+id: 1
+command: battery?
+response: b'75\r\n'
+start time: 2019-12-11 01:12:07.158687
+end_time: 2019-12-11 01:12:07.220482
+duration: 0.061795
+
+id: 2
+command: sn?
+response: b'0TQDG2KEDBFP39'
+start time: 2019-12-11 01:12:08.167682
+end_time: 2019-12-11 01:12:08.295420
+duration: 0.127738
+
+id: 3
+command: mon
+response: b'ok'
+start time: 2019-12-11 01:12:09.218868
+end_time: 2019-12-11 01:12:09.259586
+duration: 0.040718
+
+id: 4
+command: takeoff
+response: b'ok'
+start time: 2019-12-11 01:12:09.264793
+end_time: 2019-12-11 01:12:13.623637
+duration: 4.358844
+
+id: 5
+command: land
+response: b'ok'
+start time: 2019-12-11 01:12:13.624014
+end_time: 2019-12-11 01:12:17.122064
+duration: 3.49805
+

@@ -7,7 +7,7 @@ import pygame
 from pygame import *
 from subprocess import Popen, PIPE
 import paho.mqtt.client as mqtt
-from tello import Tello
+from tello_single import Tello
 
 #For MQTT
 MQTT_name = "localhost"

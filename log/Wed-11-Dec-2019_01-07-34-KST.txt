@@ -1,0 +1,4301 @@
+------
+Drone: 1
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668628
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675776
+end_time: None
+duration: None
+
+------
+Drone: 2
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668665
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675887
+end_time: None
+duration: None
+
+------
+Drone: 3
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668679
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675926
+end_time: None
+duration: None
+
+------
+Drone: 4
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668686
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675952
+end_time: None
+duration: None
+
+------
+Drone: 5
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668693
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675976
+end_time: None
+duration: None
+
+------
+Drone: 6
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668700
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.675999
+end_time: None
+duration: None
+
+------
+Drone: 7
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668707
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676021
+end_time: None
+duration: None
+
+------
+Drone: 8
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668714
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676042
+end_time: None
+duration: None
+
+------
+Drone: 9
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668721
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676067
+end_time: None
+duration: None
+
+------
+Drone: 10
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668728
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676092
+end_time: None
+duration: None
+
+------
+Drone: 11
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668735
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676117
+end_time: None
+duration: None
+
+------
+Drone: 12
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668742
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676142
+end_time: None
+duration: None
+
+------
+Drone: 13
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668749
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676164
+end_time: None
+duration: None
+
+------
+Drone: 14
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668756
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676188
+end_time: None
+duration: None
+
+------
+Drone: 15
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668767
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676211
+end_time: None
+duration: None
+
+------
+Drone: 16
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668775
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676235
+end_time: None
+duration: None
+
+------
+Drone: 17
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668782
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676259
+end_time: None
+duration: None
+
+------
+Drone: 18
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668789
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676284
+end_time: None
+duration: None
+
+------
+Drone: 19
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668796
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676310
+end_time: None
+duration: None
+
+------
+Drone: 20
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668803
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676333
+end_time: None
+duration: None
+
+------
+Drone: 21
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668810
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676355
+end_time: None
+duration: None
+
+------
+Drone: 22
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668820
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676378
+end_time: None
+duration: None
+
+------
+Drone: 23
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668828
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676404
+end_time: None
+duration: None
+
+------
+Drone: 24
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668835
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676429
+end_time: None
+duration: None
+
+------
+Drone: 25
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668842
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676454
+end_time: None
+duration: None
+
+------
+Drone: 26
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668849
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676478
+end_time: None
+duration: None
+
+------
+Drone: 27
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668856
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676500
+end_time: None
+duration: None
+
+------
+Drone: 28
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668862
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676522
+end_time: None
+duration: None
+
+------
+Drone: 29
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668869
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676544
+end_time: None
+duration: None
+
+------
+Drone: 30
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668877
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676567
+end_time: None
+duration: None
+
+------
+Drone: 31
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668883
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676592
+end_time: None
+duration: None
+
+------
+Drone: 32
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668890
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676615
+end_time: None
+duration: None
+
+------
+Drone: 33
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668896
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676637
+end_time: None
+duration: None
+
+------
+Drone: 34
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668903
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676660
+end_time: None
+duration: None
+
+------
+Drone: 35
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668911
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676683
+end_time: None
+duration: None
+
+------
+Drone: 36
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668917
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676708
+end_time: None
+duration: None
+
+------
+Drone: 37
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668924
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676732
+end_time: None
+duration: None
+
+------
+Drone: 38
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668930
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676757
+end_time: None
+duration: None
+
+------
+Drone: 39
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668937
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676781
+end_time: None
+duration: None
+
+------
+Drone: 40
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668944
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676805
+end_time: None
+duration: None
+
+------
+Drone: 41
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668951
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676828
+end_time: None
+duration: None
+
+------
+Drone: 42
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668958
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676852
+end_time: None
+duration: None
+
+------
+Drone: 43
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668966
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676877
+end_time: None
+duration: None
+
+------
+Drone: 44
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668973
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676908
+end_time: None
+duration: None
+
+------
+Drone: 45
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668980
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676934
+end_time: None
+duration: None
+
+------
+Drone: 46
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668986
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676960
+end_time: None
+duration: None
+
+------
+Drone: 47
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.668995
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.676983
+end_time: None
+duration: None
+
+------
+Drone: 48
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669002
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677008
+end_time: None
+duration: None
+
+------
+Drone: 49
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669011
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677032
+end_time: None
+duration: None
+
+------
+Drone: 50
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669018
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677063
+end_time: None
+duration: None
+
+------
+Drone: 51
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669025
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677091
+end_time: None
+duration: None
+
+------
+Drone: 52
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669032
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677116
+end_time: None
+duration: None
+
+------
+Drone: 53
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669038
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677139
+end_time: None
+duration: None
+
+------
+Drone: 54
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669047
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677163
+end_time: None
+duration: None
+
+------
+Drone: 55
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669054
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677188
+end_time: None
+duration: None
+
+------
+Drone: 56
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669061
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677212
+end_time: None
+duration: None
+
+------
+Drone: 57
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669068
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677289
+end_time: None
+duration: None
+
+------
+Drone: 58
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669075
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677316
+end_time: None
+duration: None
+
+------
+Drone: 59
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669081
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677341
+end_time: None
+duration: None
+
+------
+Drone: 60
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669087
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677365
+end_time: None
+duration: None
+
+------
+Drone: 61
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669095
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677390
+end_time: None
+duration: None
+
+------
+Drone: 62
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669101
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677415
+end_time: None
+duration: None
+
+------
+Drone: 63
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669108
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677440
+end_time: None
+duration: None
+
+------
+Drone: 64
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669114
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677464
+end_time: None
+duration: None
+
+------
+Drone: 65
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669121
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677486
+end_time: None
+duration: None
+
+------
+Drone: 66
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669128
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677510
+end_time: None
+duration: None
+
+------
+Drone: 67
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669135
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677538
+end_time: None
+duration: None
+
+------
+Drone: 68
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669142
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677563
+end_time: None
+duration: None
+
+------
+Drone: 69
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669149
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677587
+end_time: None
+duration: None
+
+------
+Drone: 70
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669155
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677611
+end_time: None
+duration: None
+
+------
+Drone: 71
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669162
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677635
+end_time: None
+duration: None
+
+------
+Drone: 72
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669169
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677658
+end_time: None
+duration: None
+
+------
+Drone: 73
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669175
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677683
+end_time: None
+duration: None
+
+------
+Drone: 74
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669182
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677709
+end_time: None
+duration: None
+
+------
+Drone: 75
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669188
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677733
+end_time: None
+duration: None
+
+------
+Drone: 76
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669194
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677757
+end_time: None
+duration: None
+
+------
+Drone: 77
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669201
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677780
+end_time: None
+duration: None
+
+------
+Drone: 78
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669207
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677804
+end_time: None
+duration: None
+
+------
+Drone: 79
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669214
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677828
+end_time: None
+duration: None
+
+------
+Drone: 80
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669256
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677852
+end_time: None
+duration: None
+
+------
+Drone: 81
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669266
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677884
+end_time: None
+duration: None
+
+------
+Drone: 82
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669276
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677911
+end_time: None
+duration: None
+
+------
+Drone: 83
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669283
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677936
+end_time: None
+duration: None
+
+------
+Drone: 84
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669290
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677960
+end_time: None
+duration: None
+
+------
+Drone: 85
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669299
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.677984
+end_time: None
+duration: None
+
+------
+Drone: 86
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669308
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678008
+end_time: None
+duration: None
+
+------
+Drone: 87
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669318
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678032
+end_time: None
+duration: None
+
+------
+Drone: 88
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669328
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678055
+end_time: None
+duration: None
+
+------
+Drone: 89
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669335
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678079
+end_time: None
+duration: None
+
+------
+Drone: 90
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669342
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678103
+end_time: None
+duration: None
+
+------
+Drone: 91
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669350
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678127
+end_time: None
+duration: None
+
+------
+Drone: 92
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669357
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678152
+end_time: None
+duration: None
+
+------
+Drone: 93
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669364
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678176
+end_time: None
+duration: None
+
+------
+Drone: 94
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669371
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678207
+end_time: None
+duration: None
+
+------
+Drone: 95
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669378
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678234
+end_time: None
+duration: None
+
+------
+Drone: 96
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669453
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678258
+end_time: None
+duration: None
+
+------
+Drone: 97
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669467
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678283
+end_time: None
+duration: None
+
+------
+Drone: 98
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669478
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678308
+end_time: None
+duration: None
+
+------
+Drone: 99
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669487
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678340
+end_time: None
+duration: None
+
+------
+Drone: 100
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669494
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678364
+end_time: None
+duration: None
+
+------
+Drone: 101
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669500
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678386
+end_time: None
+duration: None
+
+------
+Drone: 102
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669507
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678410
+end_time: None
+duration: None
+
+------
+Drone: 103
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669514
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678433
+end_time: None
+duration: None
+
+------
+Drone: 104
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669521
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678457
+end_time: None
+duration: None
+
+------
+Drone: 105
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669527
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678481
+end_time: None
+duration: None
+
+------
+Drone: 106
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669535
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678506
+end_time: None
+duration: None
+
+------
+Drone: 107
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669542
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678530
+end_time: None
+duration: None
+
+------
+Drone: 108
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669549
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678553
+end_time: None
+duration: None
+
+------
+Drone: 109
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669557
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678575
+end_time: None
+duration: None
+
+------
+Drone: 110
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669566
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678605
+end_time: None
+duration: None
+
+------
+Drone: 111
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669573
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678630
+end_time: None
+duration: None
+
+------
+Drone: 112
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669580
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678652
+end_time: None
+duration: None
+
+------
+Drone: 113
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669587
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678676
+end_time: None
+duration: None
+
+------
+Drone: 114
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669595
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678701
+end_time: None
+duration: None
+
+------
+Drone: 115
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669602
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678775
+end_time: None
+duration: None
+
+------
+Drone: 116
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669609
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678803
+end_time: None
+duration: None
+
+------
+Drone: 117
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669616
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678827
+end_time: None
+duration: None
+
+------
+Drone: 118
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669623
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678851
+end_time: None
+duration: None
+
+------
+Drone: 119
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669630
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678874
+end_time: None
+duration: None
+
+------
+Drone: 120
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669638
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678897
+end_time: None
+duration: None
+
+------
+Drone: 121
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669647
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678920
+end_time: None
+duration: None
+
+------
+Drone: 122
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669655
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678951
+end_time: None
+duration: None
+
+------
+Drone: 123
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669663
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678976
+end_time: None
+duration: None
+
+------
+Drone: 124
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669670
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.678999
+end_time: None
+duration: None
+
+------
+Drone: 125
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669677
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679020
+end_time: None
+duration: None
+
+------
+Drone: 126
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669683
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679043
+end_time: None
+duration: None
+
+------
+Drone: 127
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669690
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679066
+end_time: None
+duration: None
+
+------
+Drone: 128
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669697
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679090
+end_time: None
+duration: None
+
+------
+Drone: 129
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669704
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679114
+end_time: None
+duration: None
+
+------
+Drone: 130
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669713
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679142
+end_time: None
+duration: None
+
+------
+Drone: 131
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669721
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679170
+end_time: None
+duration: None
+
+------
+Drone: 132
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669729
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679192
+end_time: None
+duration: None
+
+------
+Drone: 133
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669736
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679215
+end_time: None
+duration: None
+
+------
+Drone: 134
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669743
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679239
+end_time: None
+duration: None
+
+------
+Drone: 135
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669749
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679262
+end_time: None
+duration: None
+
+------
+Drone: 136
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669756
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679285
+end_time: None
+duration: None
+
+------
+Drone: 137
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669763
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679315
+end_time: None
+duration: None
+
+------
+Drone: 138
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669770
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679340
+end_time: None
+duration: None
+
+------
+Drone: 139
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669776
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679363
+end_time: None
+duration: None
+
+------
+Drone: 140
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669783
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679385
+end_time: None
+duration: None
+
+------
+Drone: 141
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669791
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679406
+end_time: None
+duration: None
+
+------
+Drone: 142
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669798
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679429
+end_time: None
+duration: None
+
+------
+Drone: 143
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669805
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679450
+end_time: None
+duration: None
+
+------
+Drone: 144
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669812
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679478
+end_time: None
+duration: None
+
+------
+Drone: 145
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669819
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679502
+end_time: None
+duration: None
+
+------
+Drone: 146
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669827
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679529
+end_time: None
+duration: None
+
+------
+Drone: 147
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669836
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679551
+end_time: None
+duration: None
+
+------
+Drone: 148
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669845
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679573
+end_time: None
+duration: None
+
+------
+Drone: 149
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669853
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679595
+end_time: None
+duration: None
+
+------
+Drone: 150
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669862
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679617
+end_time: None
+duration: None
+
+------
+Drone: 151
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669869
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679640
+end_time: None
+duration: None
+
+------
+Drone: 152
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669877
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679668
+end_time: None
+duration: None
+
+------
+Drone: 153
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669884
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679690
+end_time: None
+duration: None
+
+------
+Drone: 154
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669890
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679713
+end_time: None
+duration: None
+
+------
+Drone: 155
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669897
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679735
+end_time: None
+duration: None
+
+------
+Drone: 156
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669904
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679757
+end_time: None
+duration: None
+
+------
+Drone: 157
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669911
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679779
+end_time: None
+duration: None
+
+------
+Drone: 158
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669918
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679801
+end_time: None
+duration: None
+
+------
+Drone: 159
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669926
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679825
+end_time: None
+duration: None
+
+------
+Drone: 160
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669934
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679851
+end_time: None
+duration: None
+
+------
+Drone: 161
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669940
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679877
+end_time: None
+duration: None
+
+------
+Drone: 162
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669949
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679906
+end_time: None
+duration: None
+
+------
+Drone: 163
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669957
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679931
+end_time: None
+duration: None
+
+------
+Drone: 164
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669964
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679955
+end_time: None
+duration: None
+
+------
+Drone: 165
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669971
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679976
+end_time: None
+duration: None
+
+------
+Drone: 166
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669982
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.679998
+end_time: None
+duration: None
+
+------
+Drone: 167
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669989
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680022
+end_time: None
+duration: None
+
+------
+Drone: 168
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.669996
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680046
+end_time: None
+duration: None
+
+------
+Drone: 169
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670003
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680067
+end_time: None
+duration: None
+
+------
+Drone: 170
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670009
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680089
+end_time: None
+duration: None
+
+------
+Drone: 171
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670019
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680117
+end_time: None
+duration: None
+
+------
+Drone: 172
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670026
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680139
+end_time: None
+duration: None
+
+------
+Drone: 173
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670034
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680165
+end_time: None
+duration: None
+
+------
+Drone: 174
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670041
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680189
+end_time: None
+duration: None
+
+------
+Drone: 175
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670048
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680213
+end_time: None
+duration: None
+
+------
+Drone: 176
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670055
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680234
+end_time: None
+duration: None
+
+------
+Drone: 177
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670061
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680258
+end_time: None
+duration: None
+
+------
+Drone: 178
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670069
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680287
+end_time: None
+duration: None
+
+------
+Drone: 179
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670076
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680311
+end_time: None
+duration: None
+
+------
+Drone: 180
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670083
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680335
+end_time: None
+duration: None
+
+------
+Drone: 181
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670090
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680358
+end_time: None
+duration: None
+
+------
+Drone: 182
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670097
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680382
+end_time: None
+duration: None
+
+------
+Drone: 183
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670103
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680404
+end_time: None
+duration: None
+
+------
+Drone: 184
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670112
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680428
+end_time: None
+duration: None
+
+------
+Drone: 185
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670118
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680451
+end_time: None
+duration: None
+
+------
+Drone: 186
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670125
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680475
+end_time: None
+duration: None
+
+------
+Drone: 187
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670133
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680499
+end_time: None
+duration: None
+
+------
+Drone: 188
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670140
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680522
+end_time: None
+duration: None
+
+------
+Drone: 189
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670146
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680545
+end_time: None
+duration: None
+
+------
+Drone: 190
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670153
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680569
+end_time: None
+duration: None
+
+------
+Drone: 191
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670160
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680593
+end_time: None
+duration: None
+
+------
+Drone: 192
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670167
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680617
+end_time: None
+duration: None
+
+------
+Drone: 193
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670174
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680649
+end_time: None
+duration: None
+
+------
+Drone: 194
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670182
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680689
+end_time: None
+duration: None
+
+------
+Drone: 195
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670190
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680715
+end_time: None
+duration: None
+
+------
+Drone: 196
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670197
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680738
+end_time: None
+duration: None
+
+------
+Drone: 197
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670205
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680762
+end_time: None
+duration: None
+
+------
+Drone: 198
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670212
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680785
+end_time: None
+duration: None
+
+------
+Drone: 199
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670219
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680808
+end_time: None
+duration: None
+
+------
+Drone: 200
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670226
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680839
+end_time: None
+duration: None
+
+------
+Drone: 201
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670233
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680863
+end_time: None
+duration: None
+
+------
+Drone: 202
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670239
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680884
+end_time: None
+duration: None
+
+------
+Drone: 203
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670246
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680907
+end_time: None
+duration: None
+
+------
+Drone: 204
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670253
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680931
+end_time: None
+duration: None
+
+------
+Drone: 205
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670261
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680952
+end_time: None
+duration: None
+
+------
+Drone: 206
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670268
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680974
+end_time: None
+duration: None
+
+------
+Drone: 207
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670274
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.680996
+end_time: None
+duration: None
+
+------
+Drone: 208
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670282
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681018
+end_time: None
+duration: None
+
+------
+Drone: 209
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670289
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681042
+end_time: None
+duration: None
+
+------
+Drone: 210
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670298
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681077
+end_time: None
+duration: None
+
+------
+Drone: 211
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670306
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681083
+end_time: None
+duration: None
+
+------
+Drone: 212
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670314
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681089
+end_time: None
+duration: None
+
+------
+Drone: 213
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670321
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681094
+end_time: None
+duration: None
+
+------
+Drone: 214
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670328
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681100
+end_time: None
+duration: None
+
+------
+Drone: 215
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670334
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681105
+end_time: None
+duration: None
+
+------
+Drone: 216
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670342
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681110
+end_time: None
+duration: None
+
+------
+Drone: 217
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670349
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681115
+end_time: None
+duration: None
+
+------
+Drone: 218
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670356
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681120
+end_time: None
+duration: None
+
+------
+Drone: 219
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670363
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681125
+end_time: None
+duration: None
+
+------
+Drone: 220
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670370
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681131
+end_time: None
+duration: None
+
+------
+Drone: 221
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670376
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681137
+end_time: None
+duration: None
+
+------
+Drone: 222
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670385
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681142
+end_time: None
+duration: None
+
+------
+Drone: 223
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670392
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681147
+end_time: None
+duration: None
+
+------
+Drone: 224
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670399
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681153
+end_time: None
+duration: None
+
+------
+Drone: 225
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670406
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681158
+end_time: None
+duration: None
+
+------
+Drone: 226
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670415
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681164
+end_time: None
+duration: None
+
+------
+Drone: 227
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670422
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681170
+end_time: None
+duration: None
+
+------
+Drone: 228
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670429
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681175
+end_time: None
+duration: None
+
+------
+Drone: 229
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670434
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681180
+end_time: None
+duration: None
+
+------
+Drone: 230
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670440
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681186
+end_time: None
+duration: None
+
+------
+Drone: 231
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670446
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681192
+end_time: None
+duration: None
+
+------
+Drone: 232
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670452
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681197
+end_time: None
+duration: None
+
+------
+Drone: 233
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670457
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681202
+end_time: None
+duration: None
+
+------
+Drone: 234
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670462
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681208
+end_time: None
+duration: None
+
+------
+Drone: 235
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670467
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681213
+end_time: None
+duration: None
+
+------
+Drone: 236
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670472
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681221
+end_time: None
+duration: None
+
+------
+Drone: 237
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670479
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681227
+end_time: None
+duration: None
+
+------
+Drone: 238
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670484
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681233
+end_time: None
+duration: None
+
+------
+Drone: 239
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670489
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681238
+end_time: None
+duration: None
+
+------
+Drone: 240
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670494
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681243
+end_time: None
+duration: None
+
+------
+Drone: 241
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670499
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681249
+end_time: None
+duration: None
+
+------
+Drone: 242
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670505
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681256
+end_time: None
+duration: None
+
+------
+Drone: 243
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670511
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681261
+end_time: None
+duration: None
+
+------
+Drone: 244
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670516
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681269
+end_time: None
+duration: None
+
+------
+Drone: 245
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670521
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681276
+end_time: None
+duration: None
+
+------
+Drone: 246
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670526
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681282
+end_time: None
+duration: None
+
+------
+Drone: 247
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670535
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681287
+end_time: None
+duration: None
+
+------
+Drone: 248
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670542
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681292
+end_time: None
+duration: None
+
+------
+Drone: 249
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670547
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681299
+end_time: None
+duration: None
+
+------
+Drone: 250
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670552
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681305
+end_time: None
+duration: None
+
+------
+Drone: 251
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670559
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681310
+end_time: None
+duration: None
+
+------
+Drone: 252
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670564
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681316
+end_time: None
+duration: None
+
+------
+Drone: 253
+
+id: 0
+command: command
+response: None
+start time: 2019-12-11 01:07:34.670569
+end_time: None
+duration: None
+
+id: 1
+command: command
+response: None
+start time: 2019-12-11 01:07:39.681321
+end_time: None
+duration: None
+
