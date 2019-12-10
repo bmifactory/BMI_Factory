@@ -3,6 +3,6 @@ battery_check 20
 correct_ip
 1=b'0TQDG2KEDB94U4'
 2=b'0TQDG2KEDBFP39'
-*>mon
-*>takeoff
-*>land
+1>mon
+1>takeoff
+1>land
