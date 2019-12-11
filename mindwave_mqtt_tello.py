@@ -232,6 +232,7 @@ def main():
                             mqttClient.publish(Topic_name, mqtt_command)
                         takeoff_flag = True
                         attention_duration = 0
+                        control_mode = False
                         background_img = pygame.image.load(bg_file_open)
                     else:
                         pass

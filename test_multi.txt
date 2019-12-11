@@ -1,8 +1,20 @@
 scan 2
-battery_check 20
+battery_check 7
 correct_ip
 1=b'0TQDG2KEDB94U4'
 2=b'0TQDG2KEDBFP39'
-1>mon
-1>takeoff
-1>land
+*>mon
+*>takeoff
+sync 15
+1>go 0 0 200 100 m1
+2>go 0 0 200 100 m3
+sync 15
+//*>flip f
+*>cw 90
+*>ccw 90
+1>go 100 0 200 100 m1
+2>go 100 0 200 100 m3
+sync 15
+1>go 0 0 100 100 m1
+2>go 0 0 100 100 m3
+*>land
